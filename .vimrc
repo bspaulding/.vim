@@ -7,6 +7,8 @@ set backupdir=~/.vim/swp
 set wildmode=longest,list
 set number
 set nowrap
+set expandtab
+set tabstop=2
 
 " Load matchit (% to bounce from do to end, etc.)
 runtime! macros/matchit.vim
