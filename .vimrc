@@ -9,6 +9,7 @@ set number
 set nowrap
 set expandtab
 set tabstop=2
+set hlsearch
 
 " Load matchit (% to bounce from do to end, etc.)
 runtime! macros/matchit.vim
