@@ -30,6 +30,9 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
+" Strip trailing whitespace on write. Yes this is the 'dangerous' version.
+autocmd BufWritePre * :%s/\s\+$//e
+
 call pathogen#infect()
 
 let g:zenburn_high_Contrast=1
