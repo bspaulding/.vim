@@ -39,3 +39,4 @@ let g:zenburn_high_Contrast=1
 let g:zenburn_alternate_Visual=1
 let g:zenburn_old_Visual = 1
 colorscheme zenburn
+set guifont=Menlo:h18
