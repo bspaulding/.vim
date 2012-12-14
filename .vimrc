@@ -10,6 +10,7 @@ set nowrap
 set expandtab
 set tabstop=2
 set hlsearch
+set incsearch
 
 " Load matchit (% to bounce from do to end, etc.)
 runtime! macros/matchit.vim
@@ -35,6 +36,23 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 call pathogen#infect()
 
+" Taglist Configuration
+let Tlist_Ctags_Cmd = "ctags"
+let Tlist_WinWidth = 50
+let Tlist_Inc_Winwidth = 0
+let Tlist_GainFocus_On_ToggleOpen = 1
+let Tlist_Use_Right_Window = 1
+let Tlist_Exit_OnlyWindow = 1
+let Tlist_Sort_Type = "name"
+let Tlist_Close_On_Select = 1
+let Tlist_Compact_Format = 1
+let Tlist_Display_Tag_Scope = 0
+let Tlist_Show_One_File = 1
+
+map <F4> :TlistToggle<cr><kDivide>\<
+map <F8> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+
+" Color scheme
 let g:zenburn_high_Contrast=1
 let g:zenburn_alternate_Visual=1
 let g:zenburn_old_Visual = 1
