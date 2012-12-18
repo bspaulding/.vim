@@ -11,6 +11,7 @@ set expandtab
 set tabstop=2
 set hlsearch
 set incsearch
+set autoread
 
 " Load matchit (% to bounce from do to end, etc.)
 runtime! macros/matchit.vim
