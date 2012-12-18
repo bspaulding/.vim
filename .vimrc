@@ -54,6 +54,10 @@ let g:tlist_javascript_settings = 'javascript;s:string;a:array;o:object;f:functi
 map <F4> :TlistToggle<cr><kDivide>\<
 map <F8> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
+" vim-ruby-conque
+" Cmd-Shift-R for RSpec
+nmap <silent> <D-R> :call RunRspecCurrentFileConque()<CR>
+
 " Color scheme
 let g:zenburn_high_Contrast=1
 let g:zenburn_alternate_Visual=1
