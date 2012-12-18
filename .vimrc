@@ -49,6 +49,7 @@ let Tlist_Close_On_Select = 1
 let Tlist_Compact_Format = 1
 let Tlist_Display_Tag_Scope = 0
 let Tlist_Show_One_File = 1
+let g:tlist_javascript_settings = 'javascript;s:string;a:array;o:object;f:function'
 
 map <F4> :TlistToggle<cr><kDivide>\<
 map <F8> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
