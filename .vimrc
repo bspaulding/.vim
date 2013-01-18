@@ -63,6 +63,10 @@ nmap <silent> <D-R> :call RunRspecCurrentFileConque()<CR>
 let g:CommandTAcceptSelectionMap='<C-t>'
 let g:CommandTAcceptSelectionTabMap='<CR>'
 
+" Tab Nav shortcuts
+nmap <silent> <Leader>] :tabn<CR>
+nmap <silent> <Leader>[ :tabp<CR>
+
 " Color scheme
 let g:zenburn_high_Contrast=1
 let g:zenburn_alternate_Visual=1
