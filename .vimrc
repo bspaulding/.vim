@@ -56,8 +56,8 @@ map <F4> :TlistToggle<cr>
 map <F8> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
 " vim-ruby-conque
-" Cmd-Shift-R for RSpec
-nmap <silent> <D-R> :call RunRspecCurrentFileConque()<CR>
+" Cmd-R: Run related spec
+nmap <silent> <D-r> :call RunRspecCurrentFileConque()<CR>
 
 " command-t configuration
 let g:CommandTAcceptSelectionMap='<C-t>'
