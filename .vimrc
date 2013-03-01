@@ -57,6 +57,7 @@ map <F8> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
 " vim-ruby-conque
 " Cmd-R: Run related spec
+let g:ruby_conque_rspec_runner='bundle exec rspec'
 nmap <silent> <Leader>r :call RunRspecCurrentFileConque()<CR>
 
 " command-t configuration
