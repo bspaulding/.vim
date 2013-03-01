@@ -67,6 +67,10 @@ let g:CommandTAcceptSelectionTabMap='<CR>'
 nmap <silent> <Leader>] :tabn<CR>
 nmap <silent> <Leader>[ :tabp<CR>
 
+" Tidy shortcut
+:command Thtml :%!tidy -q -i --show-errors 0
+:command Txml  :%!tidy -q -i --show-errors 0 -xml
+
 " Color scheme
 let g:zenburn_high_Contrast=1
 let g:zenburn_alternate_Visual=1
