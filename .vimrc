@@ -69,8 +69,8 @@ nmap <silent> <Leader>] :tabn<CR>
 nmap <silent> <Leader>[ :tabp<CR>
 
 " Tidy shortcut
-:command Thtml :%!tidy -q -i --show-errors 0
-:command Txml  :%!tidy -q -i --show-errors 0 -xml
+:command Thtml :%!tidy -q -wrap 800 -i --show-errors 0
+:command Txml  :%!tidy -q -wrap 800 -i --show-errors 0 -xml
 
 " Color scheme
 let g:zenburn_high_Contrast=1
