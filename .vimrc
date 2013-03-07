@@ -2,6 +2,8 @@ set nocompatible          " We're running Vim, not Vi!
 syntax enable             " Enable syntax highlighting
 filetype plugin indent on " Enable filetype-specific indenting and plugins
 
+set wildignore+=*.log
+set shell=$SHELL\ -i
 set directory=~/.vim/swp
 set backupdir=~/.vim/swp
 set wildmode=longest,list
