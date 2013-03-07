@@ -34,3 +34,6 @@
 [submodule "bundle/handlebars"]
 	path = bundle/handlebars
 	url = git://github.com/nono/vim-handlebars.git
+[submodule "bundle/vim-ruby-conque"]
+	path = bundle/vim-ruby-conque
+	url = git://github.com/bspaulding/vim-ruby-conque.git
