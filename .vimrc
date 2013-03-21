@@ -74,6 +74,9 @@ nmap <silent> <Leader>[ :tabp<CR>
 :command Thtml :%!tidy -q -wrap 800 -i --show-errors 0
 :command Txml  :%!tidy -q -wrap 800 -i --show-errors 0 -xml
 
+" NERDTree Shortcuts
+nmap <silent> <Leader>` :NERDTreeToggle<CR>
+
 " Color scheme
 let g:zenburn_high_Contrast=1
 let g:zenburn_alternate_Visual=1
