@@ -45,3 +45,6 @@ command Txml  :%!tidy -q -i --indent 1 --show-body-only 1 --show-errors 0 -xml
 " airline
 set laststatus=2 " this shows the status bar all the time
 let g:airline#extensions#tabline#enabled = 1
+
+" lorem
+let g:loremipsum_marker = {}
