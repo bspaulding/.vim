@@ -20,7 +20,10 @@ autocmd BufWinLeave * call clearmatches()
 " Strip trailing whitespace on write. This is the 'dangerous' version.
 autocmd BufWritePre * :%s/\s\+$//e
 
-nnoremap <c-b> :CtrlPBufTag<cr>
+" CtrlP
+" nnoremap <c-P> :CtrlPBufTag<cr>
+let g:ctrlp_working_path_mode = 0
+
 nnoremap <leader>i :tabp<cr>
 nnoremap <leader>o :tabn<cr>
 
