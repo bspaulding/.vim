@@ -2,9 +2,6 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 set nowrap
-set expandtab
-set tabstop=2
-set shiftwidth=2
 set directory=~/.vim/swp
 set backupdir=~/.vim/swp
 
