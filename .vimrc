@@ -1,6 +1,7 @@
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
+let g:EditorConfig_core_mode = 'external_command'
 set nowrap
 set directory=~/.vim/swp
 set backupdir=~/.vim/swp
