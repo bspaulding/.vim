@@ -53,3 +53,7 @@ let g:airline#extensions#tabline#enabled = 1
 
 " lorem
 let g:loremipsum_marker = {}
+
+" edit this guy more!
+:nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+:nnoremap <leader>sv :source $MYVIMRC<cr>
