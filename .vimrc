@@ -21,6 +21,10 @@ autocmd BufWritePre * :%s/\s\+$//e
 " CtrlP
 " nnoremap <c-P> :CtrlPBufTag<cr>
 let g:ctrlp_working_path_mode = 0
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<c-t>'],
+    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+    \ }
 
 nnoremap <leader>i :tabp<cr>
 nnoremap <leader>o :tabn<cr>
