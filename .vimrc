@@ -54,6 +54,9 @@ let g:airline#extensions#tabline#enabled = 1
 " lorem
 let g:loremipsum_marker = {}
 
-" edit this guy more!
+" edit this file more easily!
 :nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 :nnoremap <leader>sv :source $MYVIMRC<cr>
+
+" reload files automatically
+:autocmd FileChangedShell * :e
