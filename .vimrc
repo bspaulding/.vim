@@ -1,4 +1,8 @@
 execute pathogen#infect()
+
+let g:zenburn_high_Contrast=1
+colors zenburn
+
 syntax on
 filetype plugin indent on
 let g:EditorConfig_core_mode = 'external_command'
