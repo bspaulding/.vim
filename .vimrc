@@ -5,6 +5,8 @@ let g:EditorConfig_core_mode = 'external_command'
 set nowrap
 set directory=~/.vim/swp
 set backupdir=~/.vim/swp
+set incsearch
+set hlsearch
 
 " Show trailing whitespace
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
