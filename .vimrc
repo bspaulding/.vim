@@ -22,7 +22,18 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
 " Strip trailing whitespace on write. This is the 'dangerous' version.
-autocmd BufWritePre * :%s/\s\+$//e
+autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+function! <SID>StripTrailingWhitespaces()
+    " Preparation: save last search, and cursor position.
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    " Do the business:
+    %s/\s\+$//e
+    " Clean up: restore previous search history, and cursor position
+    let @/=_s
+    call cursor(l, c)
+endfunction
 
 " CtrlP
 " nnoremap <c-P> :CtrlPBufTag<cr>
