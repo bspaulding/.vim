@@ -60,3 +60,6 @@ let g:loremipsum_marker = {}
 
 " reload files automatically
 :autocmd FileChangedShell * :e
+
+" *.md files are always markdown
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
