@@ -1,4 +1,6 @@
-execute pathogen#infect()
+set runtimepath=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.vim/after
+set nocp
+call pathogen#infect()
 
 syntax on
 autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
@@ -9,6 +11,7 @@ set directory=~/.vim/swp
 set backupdir=~/.vim/swp
 set incsearch
 set hlsearch
+set esckeys
 
 " Show trailing whitespace
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
@@ -64,3 +67,13 @@ let g:loremipsum_marker = {}
 
 " *.md files are always markdown
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
+" jshint
+let jshint2_save = 1
+nnoremap <silent><F1> :JSHint<CR>
+inoremap <silent><F1> <C-O>:JSHint<CR>
+vnoremap <silent><F1> :JSHint<CR>
+
+" auto-folding for xml
+let g:xml_syntax_folding=1
+au FileType xml setlocal foldmethod=syntax
