@@ -77,3 +77,6 @@ vnoremap <silent><F1> :JSHint<CR>
 " auto-folding for xml
 let g:xml_syntax_folding=1
 au FileType xml setlocal foldmethod=syntax
+
+" use jsxhint for jshint
+let jshint2_command = 'jsxhint'
