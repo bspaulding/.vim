@@ -2,7 +2,9 @@ set runtimepath=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.
 set nocp
 call pathogen#infect()
 
-syntax on
+syntax enable
+set background=dark
+colorscheme solarized
 autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
 filetype plugin indent on
 let g:EditorConfig_core_mode = 'external_command'
