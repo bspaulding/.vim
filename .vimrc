@@ -70,15 +70,16 @@ let g:loremipsum_marker = {}
 " *.md files are always markdown
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
-" jshint
-let jshint2_save = 1
-nnoremap <silent><F1> :JSHint<CR>
-inoremap <silent><F1> <C-O>:JSHint<CR>
-vnoremap <silent><F1> :JSHint<CR>
-
 " auto-folding for xml
 let g:xml_syntax_folding=1
 au FileType xml setlocal foldmethod=syntax
 
-" use jsxhint for jshint
-let jshint2_command = 'jsxhint'
+" syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
