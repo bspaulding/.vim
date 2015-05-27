@@ -88,7 +88,7 @@ let g:syntastic_javascript_checkers = ['jsxhint', 'jscs']
 let g:syntastic_html_checkers = []
 
 " jsbeautify
-map <c-f> :call JsBeautify()<cr>
-autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
-autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
-autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
+map <c-F> :call JsBeautify()<cr>
+autocmd FileType javascript noremap <buffer>  <c-F> :call JsBeautify()<cr>
+autocmd FileType html noremap <buffer> <c-F> :call HtmlBeautify()<cr>
+autocmd FileType css noremap <buffer> <c-F> :call CSSBeautify()<cr>
