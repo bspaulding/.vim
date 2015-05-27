@@ -14,6 +14,7 @@ set backupdir=~/.vim/swp
 set incsearch
 set hlsearch
 set esckeys
+set backspace=indent,eol,start
 
 " Show trailing whitespace
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
