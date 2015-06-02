@@ -15,6 +15,9 @@ set incsearch
 set hlsearch
 set esckeys
 set backspace=indent,eol,start
+let mapleader = "\<Space>"
+nnoremap <Leader>w :w<CR>
+nnoremap <Leader>d :bd<CR>
 
 " Show trailing whitespace
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
@@ -41,6 +44,7 @@ endfunction
 
 " CtrlP
 " nnoremap <c-P> :CtrlPBufTag<cr>
+nnoremap <Leader>p :CtrlP<CR>
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': ['<c-t>'],
@@ -88,7 +92,18 @@ let g:syntastic_javascript_checkers = ['jsxhint', 'jscs']
 let g:syntastic_html_checkers = []
 
 " jsbeautify
-map <c-F> :call JsBeautify()<cr>
-autocmd FileType javascript noremap <buffer>  <c-F> :call JsBeautify()<cr>
-autocmd FileType html noremap <buffer> <c-F> :call HtmlBeautify()<cr>
-autocmd FileType css noremap <buffer> <c-F> :call CSSBeautify()<cr>
+" map <c-F> :call JsBeautify()<cr>
+" autocmd FileType javascript noremap <buffer>  <c-F> :call JsBeautify()<cr>
+" autocmd FileType html noremap <buffer> <c-F> :call HtmlBeautify()<cr>
+" autocmd FileType css noremap <buffer> <c-F> :call CSSBeautify()<cr>
+
+" vp doesn't replace paste buffer
+function! RestoreRegister()
+  let @" = s:restore_reg
+  return ''
+endfunction
+function! s:Repl()
+  let s:restore_reg = @"
+  return "p@=RestoreRegister()\<cr>"
+endfunction
+vmap <silent> <expr> p <sid>Repl()
