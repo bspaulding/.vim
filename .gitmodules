@@ -82,3 +82,6 @@
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
 	url = git://github.com/tpope/vim-surround.git
+[submodule "bundle/vim-flow"]
+	path = bundle/vim-flow
+	url = git://github.com/facebook/vim-flow.git
