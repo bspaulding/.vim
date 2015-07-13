@@ -16,8 +16,11 @@ set hlsearch
 set esckeys
 set backspace=indent,eol,start
 let mapleader = "\<Space>"
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+set tabstop=2
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>d :bd<CR>
+nnoremap <Leader>q :q<CR>
 
 " Show trailing whitespace
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
@@ -45,6 +48,7 @@ endfunction
 " CtrlP
 " nnoremap <c-P> :CtrlPBufTag<cr>
 nnoremap <Leader>p :CtrlP<CR>
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|node_modules|bower_components)$'
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': ['<c-t>'],
@@ -107,3 +111,6 @@ function! s:Repl()
   return "p@=RestoreRegister()\<cr>"
 endfunction
 vmap <silent> <expr> p <sid>Repl()
+
+" disable flow, something's broken...
+let g:flow#enable = 0
