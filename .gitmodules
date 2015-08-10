@@ -88,3 +88,6 @@
 [submodule "dash.vim"]
 	path = dash.vim
 	url = https://github.com/rizzatti/dash.vim.git
+[submodule "bundle/syntastic-jsxcs-checker"]
+	path = bundle/syntastic-jsxcs-checker
+	url = git@github.com:mgechev/syntastic-jsxcs-checker.git
