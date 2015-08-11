@@ -1,4 +1,4 @@
-"set runtimepath=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.vim/after
+" set runtimepath=/usr/local/Cellar/vim,$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.vim/after
 set nocp
 call pathogen#infect()
 
