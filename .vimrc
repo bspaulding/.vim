@@ -19,8 +19,10 @@ let mapleader = "\<Space>"
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 set tabstop=2
 nnoremap <Leader>w :w<CR>
-nnoremap <Leader>d :bd<CR>
+nnoremap <Leader>bd :bd<CR>
 nnoremap <Leader>q :q<CR>
+nnoremap <Leader>k :lnext<CR>
+nnoremap <Leader>j :lprevious<CR>
 
 " Show trailing whitespace
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
@@ -114,3 +116,22 @@ vmap <silent> <expr> p <sid>Repl()
 
 " disable flow, something's broken...
 let g:flow#enable = 0
+
+nnoremap <Leader>- ddp
+nnoremap <Leader>_ ddkP
+inoremap <Leader><c-u> <esc>viwUi
+nnoremap <Leader><c-u> viwU
+
+iabbrev waht what
+iabbrev tehn then
+
+vnoremap " <esc>a"<esc>`<i"<esc>`>ll
+
+" Vimscript file settings ---------------------- {{{
+" use marker folder for vimscripts
+augroup filetype_vim
+    autocmd!
+    autocmd FileType vim setlocal foldmethod=marker
+augroup END
+" }}}
+
