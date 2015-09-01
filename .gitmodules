@@ -91,3 +91,6 @@
 [submodule "bundle/syntastic-jsxcs-checker"]
 	path = bundle/syntastic-jsxcs-checker
 	url = git@github.com:mgechev/syntastic-jsxcs-checker.git
+[submodule "bundle/vim-multiple-cursors"]
+	path = bundle/vim-multiple-cursors
+	url = git@github.com:terryma/vim-multiple-cursors.git
