@@ -4,7 +4,7 @@ set runtimepath=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.
 call pathogen#infect()
 
 syntax enable
-set background=dark
+set background=light
 colorscheme solarized
 autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
 filetype plugin indent on
