@@ -97,3 +97,6 @@
 [submodule "bundle/vim-swift"]
 	path = bundle/vim-swift
 	url = git://github.com/toyamarinyon/vim-swift.git
+[submodule "bundle/vim-gradle"]
+	path = bundle/vim-gradle
+	url = https://github.com/tfnico/vim-gradle.git
