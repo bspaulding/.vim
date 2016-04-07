@@ -116,8 +116,9 @@ function! s:Repl()
 endfunction
 vmap <silent> <expr> p <sid>Repl()
 
-" disable flow, something's broken...
-let g:flow#enable = 0
+" flow
+let g:flow#enable = 1
+let g:flow#autoclose = 1
 
 nnoremap <Leader>- ddp
 nnoremap <Leader>_ ddkP
