@@ -3,9 +3,13 @@ set nocp
 set runtimepath=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.vim/after
 call pathogen#infect()
 
+" color scheme - vim-solarized-colors
+let g:solarized_termtrans=1
+let g:solarized_termcolors=256
 syntax enable
 set background=dark
 colorscheme solarized
+
 autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
 filetype plugin indent on
 let g:EditorConfig_core_mode = 'external_command'
