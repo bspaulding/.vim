@@ -29,6 +29,10 @@ nnoremap <Leader>q :q<CR>
 nnoremap <Leader>k :lnext<CR>
 nnoremap <Leader>j :lprevious<CR>
 
+" fzf
+set rtp+=/usr/local/opt/fzf
+nnoremap <Leader>f :FZF<CR>
+
 " Show trailing whitespace
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 highlight ExtraWhitespace ctermbg=red guibg=red
