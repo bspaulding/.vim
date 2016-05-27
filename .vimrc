@@ -68,6 +68,8 @@ let g:ctrlp_prompt_mappings = {
 
 nnoremap <leader>i :tabp<cr>
 nnoremap <leader>o :tabn<cr>
+nnoremap <leader>I :bp<cr>
+nnoremap <leader>O :bn<cr>
 
 " tidy
 command! Thtml :%!tidy -q -i --indent 1 --show-body-only 1 --show-errors 0
