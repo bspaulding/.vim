@@ -23,6 +23,7 @@ set backspace=indent,eol,start
 let mapleader = "\<Space>"
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 set tabstop=2
+set relativenumber
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>bd :bd<CR>
 nnoremap <Leader>q :q<CR>
