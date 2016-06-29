@@ -97,3 +97,6 @@
 [submodule "bundle/vim-autoswap"]
 	path = bundle/vim-autoswap
 	url = https://github.com/gioele/vim-autoswap.git
+[submodule "bundle/swift.vim"]
+	path = bundle/swift.vim
+	url = git@github.com:keith/swift.vim.git
