@@ -88,9 +88,6 @@
 [submodule "bundle/vim-multiple-cursors"]
 	path = bundle/vim-multiple-cursors
 	url = git@github.com:terryma/vim-multiple-cursors.git
-[submodule "bundle/vim-swift"]
-	path = bundle/vim-swift
-	url = git://github.com/toyamarinyon/vim-swift.git
 [submodule "bundle/vim-gradle"]
 	path = bundle/vim-gradle
 	url = https://github.com/tfnico/vim-gradle.git
