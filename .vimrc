@@ -24,6 +24,7 @@ let mapleader = "\<Space>"
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 set tabstop=2
 set relativenumber
+set autoread
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>bd :bd<CR>
 nnoremap <Leader>q :q<CR>
