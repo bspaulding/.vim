@@ -110,6 +110,7 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_html_checkers = []
 let g:syntastic_scss_checkers = []
+let g:syntastic_swift_checkers = ['swiftlint']
 
 " jsbeautify
 " map <c-F> :call JsBeautify()<cr>
