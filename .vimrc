@@ -10,7 +10,6 @@ syntax enable
 set background=dark
 colorscheme solarized
 
-autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
 filetype plugin indent on
 let g:EditorConfig_core_mode = 'external_command'
 set nowrap
