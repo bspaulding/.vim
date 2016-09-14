@@ -144,6 +144,8 @@ iabbrev tehn then
 
 vnoremap " <esc>a"<esc>`<i"<esc>`>ll
 
+nnoremap <Leader>d :NERDTreeToggle<CR>
+
 " Vimscript file settings ---------------------- {{{
 " use marker folder for vimscripts
 augroup filetype_vim
