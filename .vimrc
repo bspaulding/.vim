@@ -34,6 +34,9 @@ nnoremap <Leader>j :lprevious<CR>
 set rtp+=/usr/local/opt/fzf
 nnoremap <Leader>f :FZF<CR>
 
+" run checktime more than randomly
+autocmd BufEnter,BufWinEnter,CursorHold,CursorHoldI * :checktime
+
 " Show trailing whitespace
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 highlight ExtraWhitespace ctermbg=red guibg=red
