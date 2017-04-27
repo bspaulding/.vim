@@ -32,7 +32,7 @@ nnoremap <Leader>k :lnext<CR>
 nnoremap <Leader>j :lprevious<CR>
 
 " fzf
-set rtp+=/usr/local/opt/fzf
+set rtp+=~/.fzf
 nnoremap <Leader>f :FZF<CR>
 
 " run checktime more than randomly
