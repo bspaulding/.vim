@@ -7,7 +7,7 @@ call pathogen#infect()
 let g:solarized_termtrans=1
 let g:solarized_termcolors=256
 syntax enable
-set background=light
+set background=dark
 colorscheme solarized
 
 filetype plugin indent on
@@ -32,7 +32,7 @@ nnoremap <Leader>k :lnext<CR>
 nnoremap <Leader>j :lprevious<CR>
 
 " fzf
-set rtp+=/usr/local/opt/fzf
+set rtp+=~/.fzf
 nnoremap <Leader>f :FZF<CR>
 
 " run checktime more than randomly
