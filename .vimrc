@@ -34,6 +34,9 @@ nnoremap <Leader>j :lprevious<CR>
 " fzf
 set rtp+=~/.fzf
 nnoremap <Leader>f :FZF<CR>
+nnoremap <Leader>fb :BTags<CR>
+nnoremap <Leader>ft :Tags<CR>
+let g:fzf_tags_command = 'ctags -R'
 
 " run checktime more than randomly
 autocmd BufEnter,BufWinEnter,CursorHold,CursorHoldI * :checktime
