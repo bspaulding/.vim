@@ -34,8 +34,8 @@ nnoremap <Leader>j :lprevious<CR>
 " fzf
 set rtp+=~/.fzf
 nnoremap <Leader>f :FZF<CR>
-nnoremap <Leader>fb :BTags<CR>
-nnoremap <Leader>ft :Tags<CR>
+" nnoremap <Leader>fb :BTags<CR>
+" nnoremap <Leader>ft :Tags<CR>
 let g:fzf_tags_command = 'ctags -R'
 
 " run checktime more than randomly
@@ -114,17 +114,16 @@ let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_eslint_exe='$(npm bin)/eslint'
 let g:syntastic_html_checkers = []
 let g:syntastic_scss_checkers = []
 let g:syntastic_swift_checkers = ['swiftlint']
 let g:syntastic_objc_checkers = ['swiftlint']
 let g:syntastic_java_checkers = []
 
-" jsbeautify
-" map <c-F> :call JsBeautify()<cr>
-" autocmd FileType javascript noremap <buffer>  <c-F> :call JsBeautify()<cr>
-" autocmd FileType html noremap <buffer> <c-F> :call HtmlBeautify()<cr>
-" autocmd FileType css noremap <buffer> <c-F> :call CSSBeautify()<cr>
+" auto format with prettier
+autocmd FileType javascript set formatprg=prettier\ --stdin\ --single-quote\ --use-tabs
+" autocmd BufWritePre *.js :normal gggqG
 
 " vp doesn't replace paste buffer
 function! RestoreRegister()
@@ -182,3 +181,6 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+" auto format elm
+let g:elm_format_autosave = 1
