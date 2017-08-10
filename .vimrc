@@ -100,6 +100,9 @@ let g:loremipsum_marker = {}
 " *.md files are always markdown
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
+" *.boot files are always clojure
+autocmd BufNewFile,BufReadPost *.boot set filetype=clojure
+
 " auto-folding for xml
 let g:xml_syntax_folding=1
 au FileType xml setlocal foldmethod=syntax
