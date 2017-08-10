@@ -140,8 +140,8 @@ endfunction
 vmap <silent> <expr> p <sid>Repl()
 
 " flow
-let g:flow#enable = 1
-let g:flow#autoclose = 1
+let g:flow#enable = 0
+let g:flow#autoclose = 0
 
 nnoremap <Leader>- ddp
 nnoremap <Leader>_ ddkP
