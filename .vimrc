@@ -18,7 +18,7 @@ set directory=~/.vim/swp
 set backupdir=~/.vim/swp
 set incsearch
 set hlsearch
-set esckeys
+" set esckeys
 set backspace=indent,eol,start
 let mapleader = "\<Space>"
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
