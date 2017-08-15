@@ -190,3 +190,5 @@ nnoremap <C-H> <C-W><C-H>
 
 " auto format elm
 let g:elm_format_autosave = 1
+
+let g:sexp_enable_insert_mode_mappings = 0
