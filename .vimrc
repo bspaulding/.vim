@@ -174,8 +174,8 @@ nmap <C-c>r <Plug>SetTmuxVars
 let g:clj_fmt_autosave = 0
 
 function JSOpenTestFile()
-	let testPath = substitute(@%, "\.js$", ".test.js", "")
-	execute 'vsplit' testPath
+  let testPath = substitute(@%, "\.js$", ".test.js", "")
+  execute 'vsplit' testPath
 endfunction
 
 nnoremap <Leader>t :call JSOpenTestFile()<CR>
