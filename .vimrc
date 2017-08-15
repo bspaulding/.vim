@@ -64,20 +64,23 @@ function! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfunction
 
-" CtrlP
-" nnoremap <c-P> :CtrlPBufTag<cr>
-nnoremap <Leader>p :CtrlP<CR>
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|node_modules|bower_components)$'
-let g:ctrlp_working_path_mode = 0
-let g:ctrlp_prompt_mappings = {
-    \ 'AcceptSelection("e")': ['<c-t>'],
-    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
-    \ }
-
 nnoremap <leader>i :tabp<cr>
 nnoremap <leader>o :tabn<cr>
 nnoremap <leader>I :bp<cr>
 nnoremap <leader>O :bn<cr>
+
+function! PrettierFormat()
+    " Preparation: save last search, and cursor position.
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    " Do the business:
+    execute ':normal gggqG'
+    " Clean up: restore previous search history, and cursor position
+    let @/=_s
+    call cursor(l, c)
+endfunction
+nnoremap <leader>p :call PrettierFormat()<cr>
 
 " tidy
 command! Thtml :%!tidy -q -i --indent 1 --show-body-only 1 --show-errors 0
