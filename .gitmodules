@@ -139,3 +139,6 @@
 [submodule "bundle/vim-parinfer"]
 	path = bundle/vim-parinfer
 	url = https://github.com/bhurlow/vim-parinfer.git
+[submodule "bundle/purescript-vim"]
+	path = bundle/purescript-vim
+	url = https://github.com/raichoo/purescript-vim.git
