@@ -108,6 +108,9 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 " *.boot files are always clojure
 autocmd BufNewFile,BufReadPost *.boot set filetype=clojure
 
+" .eslintrc files are json
+autocmd BufNewFile,BufReadPost *.eslintrc set filetype=json
+
 " auto-folding for xml
 let g:xml_syntax_folding=1
 au FileType xml setlocal foldmethod=syntax
