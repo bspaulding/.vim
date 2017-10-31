@@ -116,9 +116,15 @@ let g:xml_syntax_folding=1
 au FileType xml setlocal foldmethod=syntax
 
 " ale config
+let g:ale_fix_on_save = 1
 let g:ale_echo_msg_format = '%linter% says %s'
 nnoremap <leader>an :ALENextWrap<cr>
 nnoremap <leader>ap :ALEPreviousWrap<cr>
+let g:ale_sign_error = '⚠️'
+let g:ale_sign_warning = '⚠️'
+let g:ale_linters = {
+\	'javascript': ['eslint', 'prettier', 'flow']
+\}
 
 " auto format with prettier
 autocmd FileType javascript set formatprg=prettier\ --stdin\ --single-quote\ --use-tabs
