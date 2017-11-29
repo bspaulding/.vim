@@ -139,3 +139,6 @@
 [submodule "bundle/ale"]
 	path = bundle/ale
 	url = https://github.com/w0rp/ale.git
+[submodule "bundle/vim-reason-plus"]
+	path = bundle/vim-reason-plus
+	url = https://github.com/reasonml-editor/vim-reason-plus.git
