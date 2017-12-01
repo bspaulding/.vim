@@ -142,3 +142,6 @@
 [submodule "bundle/vim-reason-plus"]
 	path = bundle/vim-reason-plus
 	url = https://github.com/reasonml-editor/vim-reason-plus.git
+[submodule "bundle/vim-one"]
+	path = bundle/vim-one
+	url = https://github.com/rakr/vim-one.git
