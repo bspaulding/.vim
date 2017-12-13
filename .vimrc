@@ -4,6 +4,7 @@ set runtimepath=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.
 call pathogen#infect()
 
 " color scheme - vim-solarized-colors
+let g:airline_theme='solarized'
 let g:solarized_termtrans=1
 let g:solarized_termcolors=256
 syntax enable
