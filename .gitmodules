@@ -145,3 +145,6 @@
 [submodule "bundle/vim-one"]
 	path = bundle/vim-one
 	url = https://github.com/rakr/vim-one.git
+[submodule "bundle/vim-airline-themes"]
+	path = bundle/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
