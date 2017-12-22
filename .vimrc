@@ -11,6 +11,8 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+hi clear SignColumn
+
 filetype plugin indent on
 set omnifunc=syntaxcomplete#Complete
 let g:EditorConfig_core_mode = 'external_command'
@@ -33,6 +35,7 @@ nnoremap <Leader>bd :bd<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>k :lnext<CR>
 nnoremap <Leader>j :lprevious<CR>
+nnoremap cf :e <cfile><CR>
 
 " fzf
 set rtp+=~/.fzf
@@ -43,6 +46,8 @@ let g:fzf_tags_command = 'ctags -R'
 
 " run checktime more than randomly
 autocmd BufEnter,BufWinEnter,CursorHold,CursorHoldI * :checktime
+
+autocmd VimResized * :wincmd =
 
 " Show trailing whitespace
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
@@ -97,7 +102,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:loremipsum_marker = {}
 
 " edit this file more easily!
-:nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+:nnoremap <leader>ev :e $MYVIMRC<cr>
 :nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " reload files automatically
@@ -122,8 +127,8 @@ let g:ale_echo_msg_format = '%linter% says %s'
 nnoremap <leader>an :ALENextWrap<cr>
 nnoremap <leader>ap :ALEPreviousWrap<cr>
 nnoremap <leader>ad :ALEDetail<cr>
-let g:ale_sign_error = '⚠️'
-let g:ale_sign_warning = '⚠️'
+" let g:ale_sign_error = '⚠️'
+" let g:ale_sign_warning = '⚠️'
 let g:ale_linters = {
 \	'javascript': ['eslint', 'prettier', 'flow']
 \}
