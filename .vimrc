@@ -136,7 +136,7 @@ let g:ale_linters = {
 \}
 
 " auto format with prettier
-autocmd FileType javascript set formatprg=prettier\ --stdin\ --single-quote\ --use-tabs
+autocmd FileType javascript set formatprg=prettier\ --stdin\
 " autocmd BufWritePre *.js :normal gggqG
 
 " vp doesn't replace paste buffer
