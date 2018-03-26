@@ -105,6 +105,8 @@ let g:loremipsum_marker = {}
 :nnoremap <leader>ev :e $MYVIMRC<cr>
 :nnoremap <leader>sv :source $MYVIMRC<cr>
 
+:nnoremap <leader>et :e ~/Dropbox/todo.md<cr>
+
 " reload files automatically
 :autocmd FileChangedShell * :e
 
