@@ -4,12 +4,27 @@ set runtimepath=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.
 call pathogen#infect()
 
 " color scheme - vim-solarized-colors
-let g:airline_theme='solarized'
-let g:solarized_termtrans=1
-let g:solarized_termcolors=256
-syntax enable
-set background=dark
-colorscheme solarized
+" let g:airline_theme='solarized'
+" let g:solarized_termtrans=1
+" let g:solarized_termcolors=256
+" syntax enable
+" set background=dark
+" colorscheme solarized
+
+" color scheme - vim-one BROKEN ;(
+" set termguicolors
+" syntax enable
+" set background=dark
+" colorscheme one
+" let g:airline_theme='one'
+
+" color scheme - onedark
+if (has("termguicolors"))
+	set termguicolors
+endif
+let g:airline_theme='onedark'
+syntax on
+colorscheme onedark
 
 hi clear SignColumn
 
