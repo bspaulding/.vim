@@ -52,6 +52,7 @@ nnoremap <Leader>q :q<CR>
 nnoremap <Leader>k :lnext<CR>
 nnoremap <Leader>j :lprevious<CR>
 nnoremap cf :e <cfile><CR>
+nnoremap <Leader>c :noh<CR>
 
 " fzf
 set rtp+=~/.fzf
@@ -113,15 +114,17 @@ command! Txml  :%!tidy -q -i --indent 1 --show-body-only 1 --show-errors 0 -xml
 " airline
 set laststatus=2 " this shows the status bar all the time
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 
 " lorem
 let g:loremipsum_marker = {}
 
 " edit this file more easily!
-:nnoremap <leader>ev :e $MYVIMRC<cr>
+:nnoremap <leader>ev :tabe $MYVIMRC<cr>
 :nnoremap <leader>sv :source $MYVIMRC<cr>
 
-:nnoremap <leader>et :e ~/Dropbox/todo.md<cr>
+:nnoremap <leader>et :tabe ~/Dropbox/Shared\ With\ Work/todo.md<cr>
 
 " reload files automatically
 :autocmd FileChangedShell * :e
@@ -135,6 +138,9 @@ autocmd BufNewFile,BufReadPost *.boot set filetype=clojure
 " .eslintrc files are json
 autocmd BufNewFile,BufReadPost *.eslintrc set filetype=json
 
+" .vue files are html
+autocmd BufNewFile,BufReadPost *.vue set filetype=html
+
 " auto-folding for xml
 let g:xml_syntax_folding=1
 au FileType xml setlocal foldmethod=syntax
@@ -145,14 +151,14 @@ let g:ale_echo_msg_format = '%linter% says %s'
 nnoremap <leader>an :ALENextWrap<cr>
 nnoremap <leader>ap :ALEPreviousWrap<cr>
 nnoremap <leader>ad :ALEDetail<cr>
-" let g:ale_sign_error = '⚠️'
-" let g:ale_sign_warning = '⚠️'
+" let g:ale_sign_error = 'â ï¸'
+" let g:ale_sign_warning = 'â ï¸'
 let g:ale_linters = {
 \	'javascript': ['eslint', 'prettier', 'flow']
 \}
 
 " auto format with prettier
-autocmd FileType javascript set formatprg=prettier\ --stdin\
+autocmd FileType javascript set formatprg=prettier\ --stdin
 " autocmd BufWritePre *.js :normal gggqG
 
 " vp doesn't replace paste buffer
@@ -201,8 +207,19 @@ function JSOpenTestFile()
   let testPath = substitute(@%, "\.js$", ".test.js", "")
   execute 'vsplit' testPath
 endfunction
-
 nnoremap <Leader>t :call JSOpenTestFile()<CR>
+
+function JestRunFile()
+	silent !clear
+	execute "!jest --silent " . bufname("%")
+endfunction
+nnoremap <Leader>j :call JestRunFile()<CR>
+
+function JestRunUpdateSnaps()
+	silent !clear
+	execute "!jest --silent -u " . bufname("%")
+endfunction
+nnoremap <Leader>J :call JestRunUpdateSnaps()<CR>
 
 nnoremap <Leader>e V:Eval<CR>
 
@@ -216,3 +233,9 @@ nnoremap <C-H> <C-W><C-H>
 let g:elm_format_autosave = 1
 
 let g:sexp_enable_insert_mode_mappings = 0
+
+nnoremap <Leader>= :wincmd =
+
+" session stuff
+" autocmd VimLeave * :mks! .vimsession
+" autocmd VimEnter * :so .vimsession
