@@ -44,6 +44,7 @@ set tabstop=2
 set relativenumber
 set autoread
 set sessionoptions-=options
+set clipboard=unnamed
 
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>bd :bd<CR>
