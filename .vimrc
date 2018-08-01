@@ -94,19 +94,6 @@ nnoremap <leader>o :tabn<cr>
 nnoremap <leader>I :bp<cr>
 nnoremap <leader>O :bn<cr>
 
-function! PrettierFormat()
-    " Preparation: save last search, and cursor position.
-    let _s=@/
-    let l = line(".")
-    let c = col(".")
-    " Do the business:
-    execute ':normal gggqG'
-    " Clean up: restore previous search history, and cursor position
-    let @/=_s
-    call cursor(l, c)
-endfunction
-nnoremap <leader>p :call PrettierFormat()<cr>
-
 " tidy
 command! Thtml :%!tidy -q -i --indent 1 --show-body-only 1 --show-errors 0
 command! Txml  :%!tidy -q -i --indent 1 --show-body-only 1 --show-errors 0 -xml
@@ -148,18 +135,19 @@ au FileType xml setlocal foldmethod=syntax
 " ale config
 let g:ale_fix_on_save = 1
 let g:ale_echo_msg_format = '%linter% says %s'
+let g:ale_javascript_prettier_use_local_config = 1
 nnoremap <leader>an :ALENextWrap<cr>
 nnoremap <leader>ap :ALEPreviousWrap<cr>
 nnoremap <leader>ad :ALEDetail<cr>
+nnoremap <leader>p :ALEFix<cr>
 " let g:ale_sign_error = 'â ï¸'
 " let g:ale_sign_warning = 'â ï¸'
 let g:ale_linters = {
 \	'javascript': ['eslint', 'prettier', 'flow']
 \}
-
-" auto format with prettier
-autocmd FileType javascript set formatprg=prettier\ --stdin
-" autocmd BufWritePre *.js :normal gggqG
+let g:ale_fixers = {
+\ 'javascript': ['eslint', 'prettier']
+\}
 
 " vp doesn't replace paste buffer
 function! RestoreRegister()
