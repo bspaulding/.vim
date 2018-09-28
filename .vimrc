@@ -45,6 +45,7 @@ set relativenumber
 set autoread
 set sessionoptions-=options
 set clipboard=unnamed
+set foldlevelstart=99
 
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>bd :bd<CR>
