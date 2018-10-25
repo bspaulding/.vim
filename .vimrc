@@ -230,3 +230,6 @@ nnoremap <Leader>= :wincmd =
 " session stuff
 " autocmd VimLeave * :mks! .vimsession
 " autocmd VimEnter * :so .vimsession
+
+" rust
+let g:rustfmt_autosave = 1
