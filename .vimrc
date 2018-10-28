@@ -149,7 +149,8 @@ let g:ale_linters = {
 \}
 let g:ale_fixers = {
 \	'javascript': ['eslint', 'prettier'],
-\	'json': ['eslint', 'prettier']
+\	'json': ['eslint', 'prettier'],
+\	'rust': ['rustfmt']
 \}
 
 " vp doesn't replace paste buffer
@@ -230,6 +231,3 @@ nnoremap <Leader>= :wincmd =
 " session stuff
 " autocmd VimLeave * :mks! .vimsession
 " autocmd VimEnter * :so .vimsession
-
-" rust
-let g:rustfmt_autosave = 1
