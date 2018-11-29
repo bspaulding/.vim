@@ -6,16 +6,16 @@
 	url = git://github.com/mustache/vim-mustache-handlebars.git
 [submodule "bundle/ag"]
 	path = bundle/ag
-	url = git@github.com:rking/ag.vim.git
+	url = git://github.com/rking/ag.vim.git
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = git://github.com/godlygeek/tabular.git
 [submodule "bundle/tcomment_vim"]
 	path = bundle/tcomment_vim
-	url = git@github.com:tomtom/tcomment_vim.git
+	url = git://github.com/tomtom/tcomment_vim.git
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
-	url = git@github.com:bling/vim-airline.git
+	url = git://github.com/bling/vim-airline.git
 [submodule "bundle/vim-bundler"]
 	path = bundle/vim-bundler
 	url = git://github.com/tpope/vim-bundler.git
@@ -27,13 +27,13 @@
 	url = git://github.com/tpope/vim-rails.git
 [submodule "bundle/vim-ruby-refactoring"]
 	path = bundle/vim-ruby-refactoring
-	url = git@github.com:ecomba/vim-ruby-refactoring.git
+	url = git://github.com/ecomba/vim-ruby-refactoring.git
 [submodule "bundle/vim-arduino-ino"]
 	path = bundle/vim-arduino-ino
-	url = git@github.com:jplaut/vim-arduino-ino.git
+	url = git://github.com/jplaut/vim-arduino-ino.git
 [submodule "bundle/loremipsum"]
 	path = bundle/loremipsum
-	url = git@github.com:vim-scripts/loremipsum.git
+	url = git://github.com/vim-scripts/loremipsum.git
 [submodule "bundle/editorconfig-vim"]
 	path = bundle/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
@@ -48,7 +48,7 @@
 	url = git://github.com/vim-ruby/vim-ruby.git
 [submodule "bundle/vim-colorschemes"]
 	path = bundle/vim-colorschemes
-	url = git@github.com:flazz/vim-colorschemes.git
+	url = git://github.com/flazz/vim-colorschemes.git
 [submodule "bundle/emmet-vim"]
 	path = bundle/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
@@ -72,19 +72,19 @@
 	url = https://github.com/rizzatti/dash.vim.git
 [submodule "bundle/vim-multiple-cursors"]
 	path = bundle/vim-multiple-cursors
-	url = git@github.com:terryma/vim-multiple-cursors.git
+	url = git://github.com/terryma/vim-multiple-cursors.git
 [submodule "bundle/vim-gradle"]
 	path = bundle/vim-gradle
 	url = https://github.com/tfnico/vim-gradle.git
 [submodule "bundle/vim-go"]
 	path = bundle/vim-go
-	url = git@github.com:fatih/vim-go.git
+	url = git://github.com/fatih/vim-go.git
 [submodule "bundle/vim-autoswap"]
 	path = bundle/vim-autoswap
 	url = https://github.com/gioele/vim-autoswap.git
 [submodule "bundle/swift.vim"]
 	path = bundle/swift.vim
-	url = git@github.com:keith/swift.vim.git
+	url = git://github.com/keith/swift.vim.git
 [submodule "bundle/vim-fireplace"]
 	path = bundle/vim-fireplace
 	url = git://github.com/tpope/vim-fireplace.git
@@ -93,13 +93,13 @@
 	url = git://github.com/tpope/vim-sexp-mappings-for-regular-people.git
 [submodule "bundle/vim-sexp"]
 	path = bundle/vim-sexp
-	url = git@github.com:guns/vim-sexp.git
+	url = git://github.com/guns/vim-sexp.git
 [submodule "bundle/vim-repeat"]
 	path = bundle/vim-repeat
 	url = git://github.com/tpope/vim-repeat.git
 [submodule "bundle/vim-clojure-static"]
 	path = bundle/vim-clojure-static
-	url = git@github.com:guns/vim-clojure-static.git
+	url = git://github.com/guns/vim-clojure-static.git
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
@@ -120,7 +120,7 @@
 	url = git://github.com/tpope/vim-classpath.git
 [submodule "bundle/fzf.vim"]
 	path = bundle/fzf.vim
-	url = git@github.com:junegunn/fzf.vim.git
+	url = git://github.com/junegunn/fzf.vim.git
 [submodule "bundle/elm-vim"]
 	path = bundle/elm-vim
 	url = https://github.com/ElmCast/elm-vim.git
