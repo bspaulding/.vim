@@ -123,8 +123,10 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 " *.boot files are always clojure
 autocmd BufNewFile,BufReadPost *.boot set filetype=clojure
 
-" .eslintrc files are json
+" json dot files are json
 autocmd BufNewFile,BufReadPost *.eslintrc set filetype=json
+autocmd BufNewFile,BufReadPost *.babelrc set filetype=json
+autocmd BufNewFile,BufReadPost *.prettierrc set filetype=json
 
 " .vue files are html
 autocmd BufNewFile,BufReadPost *.vue set filetype=html
