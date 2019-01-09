@@ -131,6 +131,9 @@ autocmd BufNewFile,BufReadPost *.prettierrc set filetype=json
 " .vue files are html
 autocmd BufNewFile,BufReadPost *.vue set filetype=html
 
+" -dockerfile files are dockerfile
+autocmd BufNewFile,BufReadPost *-dockerfile set filetype=dockerfile
+
 " auto-folding for xml
 let g:xml_syntax_folding=1
 au FileType xml setlocal foldmethod=syntax
