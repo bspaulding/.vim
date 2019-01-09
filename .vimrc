@@ -239,3 +239,7 @@ nnoremap <Leader>= :wincmd =
 " session stuff
 " autocmd VimLeave * :mks! .vimsession
 " autocmd VimEnter * :so .vimsession
+
+" python/jedi things
+let g:jedi#auto_initialization = 0
+let g:jedi#use_splits_not_buffers = "right"
