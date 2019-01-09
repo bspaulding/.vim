@@ -150,12 +150,15 @@ nnoremap <leader>p :ALEFix<cr>
 " let g:ale_sign_warning = 'â ï¸'
 let g:ale_linters = {
 \	'javascript': ['eslint', 'prettier', 'flow'],
-\	'json': ['eslint', 'prettier']
+\	'json': ['eslint', 'prettier'],
+\	'python': []
 \}
 let g:ale_fixers = {
 \	'javascript': ['eslint', 'prettier'],
+\	'typescript': ['prettier'],
 \	'json': ['eslint', 'prettier'],
-\	'rust': ['rustfmt']
+\	'rust': ['rustfmt'],
+\	'python': []
 \}
 
 " vp doesn't replace paste buffer
