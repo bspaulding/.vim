@@ -163,3 +163,6 @@
 [submodule "bundle/vim-pyenv"]
 	path = bundle/vim-pyenv
 	url = https://github.com/lambdalisue/vim-pyenv.git
+[submodule "bundle/vim-stylus"]
+	path = bundle/vim-stylus
+	url = git://github.com/wavded/vim-stylus.git
