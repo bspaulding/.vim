@@ -62,6 +62,12 @@ nnoremap <Leader>f :FZF<CR>
 " nnoremap <Leader>ft :Tags<CR>
 let g:fzf_tags_command = 'ctags -R'
 
+" ack.vim use ag if available
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+command Ag Ack
+
 " run checktime more than randomly
 autocmd BufEnter,BufWinEnter,CursorHold,CursorHoldI * :checktime
 
