@@ -202,7 +202,7 @@ iabbrev tehn then
 
 vnoremap " <esc>a"<esc>`<i"<esc>`>ll
 
-nnoremap <Leader>d :NERDTreeToggle<CR>
+" nnoremap <Leader>d :NERDTreeToggle<CR>
 
 " Vimscript file settings ---------------------- {{{
 " use marker folder for vimscripts
@@ -257,5 +257,5 @@ nnoremap <Leader>= :wincmd =
 " autocmd VimEnter * :so .vimsession
 
 " python/jedi things
-let g:jedi#auto_initialization = 0
+let g:jedi#auto_initialization = 1
 let g:jedi#use_splits_not_buffers = "right"
