@@ -167,14 +167,14 @@ nnoremap <leader>p :ALEFix<cr>
 let g:ale_linters = {
 \	'javascript': ['eslint', 'prettier', 'flow'],
 \	'json': ['eslint', 'prettier'],
-\	'python': []
 \}
 let g:ale_fixers = {
 \	'javascript': ['eslint', 'prettier'],
 \	'typescript': ['prettier'],
 \	'json': ['eslint', 'prettier'],
 \	'rust': ['rustfmt'],
-\	'python': []
+\	'python': ['yapf'],
+\	'sql': ['sqlfmt']
 \}
 
 " vp doesn't replace paste buffer
