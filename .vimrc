@@ -140,6 +140,16 @@ autocmd BufNewFile,BufReadPost *.vue set filetype=html
 " -dockerfile files are dockerfile
 autocmd BufNewFile,BufReadPost *-dockerfile set filetype=dockerfile
 
+fun! SetFixOnSave()
+	" disable fix on save for some file types, just python for now
+	if &ft =~ 'python'
+		let g:ale_fix_on_save = 0
+	else
+		let g:ale_fix_on_save = 1
+	endif
+endfun
+autocmd BufNewFile,BufReadPost * call SetFixOnSave()
+
 " auto-folding for xml
 let g:xml_syntax_folding=1
 au FileType xml setlocal foldmethod=syntax
