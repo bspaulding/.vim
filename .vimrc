@@ -12,19 +12,19 @@ call pathogen#infect()
 " colorscheme solarized
 
 " color scheme - vim-one BROKEN ;(
-" set termguicolors
-" syntax enable
-" set background=dark
-" colorscheme one
-" let g:airline_theme='one'
+set termguicolors
+syntax enable
+set background=dark
+colorscheme one
+let g:airline_theme='one'
 
 " color scheme - onedark
-if (has("termguicolors"))
-	set termguicolors
-endif
-let g:airline_theme='onedark'
-syntax on
-colorscheme onedark
+" if (has("termguicolors"))
+" 	set termguicolors
+" endif
+" let g:airline_theme='onedark'
+" syntax on
+" colorscheme onedark
 
 hi clear SignColumn
 
