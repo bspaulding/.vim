@@ -139,6 +139,7 @@ autocmd BufNewFile,BufReadPost *.vue set filetype=html
 
 " -dockerfile files are dockerfile
 autocmd BufNewFile,BufReadPost *-dockerfile set filetype=dockerfile
+autocmd BufNewFile,BufReadPost Dockerfile.prod set filetype=dockerfile
 
 " auto-folding for xml
 let g:xml_syntax_folding=1
