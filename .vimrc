@@ -12,19 +12,19 @@ call pathogen#infect()
 " colorscheme solarized
 
 " color scheme - vim-one BROKEN ;(
-" set termguicolors
-" syntax enable
-" set background=dark
-" colorscheme one
-" let g:airline_theme='one'
+set termguicolors
+syntax enable
+set background=dark
+colorscheme one
+let g:airline_theme='one'
 
 " color scheme - onedark
-if (has("termguicolors"))
-	set termguicolors
-endif
-let g:airline_theme='onedark'
-syntax on
-colorscheme onedark
+" if (has("termguicolors"))
+" 	set termguicolors
+" endif
+" let g:airline_theme='onedark'
+" syntax on
+" colorscheme onedark
 
 hi clear SignColumn
 
@@ -141,6 +141,16 @@ autocmd BufNewFile,BufReadPost *.vue set filetype=html
 autocmd BufNewFile,BufReadPost *-dockerfile set filetype=dockerfile
 autocmd BufNewFile,BufReadPost Dockerfile.prod set filetype=dockerfile
 
+fun! SetFixOnSave()
+	" disable fix on save for some file types, just python for now
+	if &ft =~ 'python'
+		let g:ale_fix_on_save = 0
+	else
+		let g:ale_fix_on_save = 1
+	endif
+endfun
+autocmd BufNewFile,BufReadPost * call SetFixOnSave()
+
 " auto-folding for xml
 let g:xml_syntax_folding=1
 au FileType xml setlocal foldmethod=syntax
@@ -158,14 +168,14 @@ nnoremap <leader>p :ALEFix<cr>
 let g:ale_linters = {
 \	'javascript': ['eslint', 'prettier', 'flow'],
 \	'json': ['eslint', 'prettier'],
-\	'python': []
 \}
 let g:ale_fixers = {
 \	'javascript': ['eslint', 'prettier'],
 \	'typescript': ['prettier'],
 \	'json': ['eslint', 'prettier'],
 \	'rust': ['rustfmt'],
-\	'python': []
+\	'python': ['yapf'],
+\	'sql': ['sqlfmt']
 \}
 
 " vp doesn't replace paste buffer
@@ -193,7 +203,7 @@ iabbrev tehn then
 
 vnoremap " <esc>a"<esc>`<i"<esc>`>ll
 
-nnoremap <Leader>d :NERDTreeToggle<CR>
+" nnoremap <Leader>d :NERDTreeToggle<CR>
 
 " Vimscript file settings ---------------------- {{{
 " use marker folder for vimscripts
@@ -248,5 +258,5 @@ nnoremap <Leader>= :wincmd =
 " autocmd VimEnter * :so .vimsession
 
 " python/jedi things
-let g:jedi#auto_initialization = 0
+let g:jedi#auto_initialization = 1
 let g:jedi#use_splits_not_buffers = "right"
