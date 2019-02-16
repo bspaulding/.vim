@@ -14,8 +14,8 @@ call pathogen#infect()
 " color scheme - vim-one BROKEN ;(
 set termguicolors
 syntax enable
-set background=dark
 colorscheme one
+set background=dark
 let g:airline_theme='one'
 
 " color scheme - onedark
