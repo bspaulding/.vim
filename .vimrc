@@ -62,8 +62,10 @@ nnoremap <Leader>f :FZF<CR>
 " nnoremap <Leader>ft :Tags<CR>
 let g:fzf_tags_command = 'ctags -R'
 
-" ack.vim use ag if available
-if executable('ag')
+" ack.vim use rg or ag if available
+if executable('rg')
+  let g:ackprg = 'rg --vimgrep --no-heading'
+elseif executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
 command Ag Ack
