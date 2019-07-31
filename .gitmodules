@@ -178,3 +178,6 @@
 [submodule "bundle/python-syntax"]
 	path = bundle/python-syntax
 	url = https://github.com/vim-python/python-syntax.git
+[submodule "bundle/vim-orgmode"]
+	path = bundle/vim-orgmode
+	url = https://github.com/jceb/vim-orgmode.git
