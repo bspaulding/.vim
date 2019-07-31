@@ -175,3 +175,6 @@
 [submodule "bundle/codi.vim"]
 	path = bundle/codi.vim
 	url = https://github.com/metakirby5/codi.vim.git
+[submodule "bundle/python-syntax"]
+	path = bundle/python-syntax
+	url = https://github.com/vim-python/python-syntax.git
