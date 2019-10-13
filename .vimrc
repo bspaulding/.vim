@@ -144,6 +144,9 @@ autocmd BufNewFile,BufReadPost *.svelte set filetype=html
 autocmd BufNewFile,BufReadPost *-dockerfile set filetype=dockerfile
 autocmd BufNewFile,BufReadPost Dockerfile.prod set filetype=dockerfile
 
+autocmd BufRead *.rs :setlocal tags=./rusty-tags.vi;/
+autocmd BufWritePost *.rs :silent! exec "!rusty-tags vi --quiet --start-dir=" . expand('%:p:h') . "&" | redraw!
+
 fun! SetFixOnSave()
 	" disable fix on save for some file types, just python for now
 	if &ft =~ 'python'
