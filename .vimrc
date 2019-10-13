@@ -136,8 +136,9 @@ autocmd BufNewFile,BufReadPost *.eslintrc set filetype=json
 autocmd BufNewFile,BufReadPost *.babelrc set filetype=json
 autocmd BufNewFile,BufReadPost *.prettierrc set filetype=json
 
-" .vue files are html
+" .vue/.svelte files are html
 autocmd BufNewFile,BufReadPost *.vue set filetype=html
+autocmd BufNewFile,BufReadPost *.svelte set filetype=html
 
 " -dockerfile files are dockerfile
 autocmd BufNewFile,BufReadPost *-dockerfile set filetype=dockerfile
