@@ -176,12 +176,14 @@ let g:ale_linters = {
 \	'json': ['eslint', 'prettier'],
 \}
 let g:ale_fixers = {
+\	'html': ['prettier'],
 \	'javascript': ['eslint', 'prettier'],
 \	'typescript': ['prettier'],
 \	'json': ['eslint', 'prettier'],
 \	'rust': ['rustfmt'],
 \	'python': ['yapf'],
-\	'sql': ['sqlfmt']
+\	'sql': ['sqlfmt'],
+\ 'haskell': ['hfmt'],
 \}
 
 " vp doesn't replace paste buffer
