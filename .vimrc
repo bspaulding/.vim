@@ -174,16 +174,19 @@ nnoremap <leader>p :ALEFix<cr>
 let g:ale_linters = {
 \	'javascript': ['eslint', 'prettier', 'flow'],
 \	'json': ['eslint', 'prettier'],
+\ 'scala': ['sbtserver']
 \}
 let g:ale_fixers = {
+\	'css': ['prettier'],
 \	'html': ['prettier'],
 \	'javascript': ['eslint', 'prettier'],
-\	'typescript': ['prettier'],
 \	'json': ['eslint', 'prettier'],
+\	'python': [],
 \	'rust': ['rustfmt'],
-\	'python': ['yapf'],
 \	'sql': ['sqlfmt'],
+\	'typescript': ['prettier']
 \ 'haskell': ['hfmt'],
+\ 'scala': ['scalafmt'],
 \}
 
 " vp doesn't replace paste buffer
@@ -267,4 +270,9 @@ nnoremap <Leader>= :wincmd =
 
 " python/jedi things
 let g:jedi#auto_initialization = 1
-let g:jedi#use_splits_not_buffers = "right"
+let g:jedi#use_tabs_not_buffers = 1
+let g:jedi#popup_on_dot = 0
+let g:jedi#completions_enabled = 0
+
+" vim-python
+let g:python_highlight_all = 1
