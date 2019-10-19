@@ -184,9 +184,9 @@ let g:ale_fixers = {
 \	'python': [],
 \	'rust': ['rustfmt'],
 \	'sql': ['sqlfmt'],
-\	'typescript': ['prettier']
+\	'typescript': ['prettier'],
 \ 'haskell': ['hfmt'],
-\ 'scala': ['scalafmt'],
+\ 'scala': ['scalafmt']
 \}
 
 " vp doesn't replace paste buffer
