@@ -294,3 +294,6 @@ let g:jedi#completions_enabled = 0
 
 " vim-python
 let g:python_highlight_all = 1
+
+" hdevtools
+let g:hdevtools_stack = 1
