@@ -172,9 +172,9 @@ nnoremap <leader>p :ALEFix<cr>
 " let g:ale_sign_error = 'â ï¸'
 " let g:ale_sign_warning = 'â ï¸'
 let g:ale_linters = {
-\	'javascript': ['eslint', 'prettier', 'flow'],
-\	'json': ['eslint', 'prettier'],
-\ 'scala': ['sbtserver']
+\ 'javascript': ['eslint', 'prettier', 'flow'],
+\ 'json': ['eslint', 'prettier'],
+\ 'scala': ['sbtserver'],
 \}
 let g:ale_fixers = {
 \	'css': ['prettier'],
