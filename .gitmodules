@@ -193,3 +193,6 @@
 [submodule "bundle/vim-syntax-shakespeare"]
 	path = bundle/vim-syntax-shakespeare
 	url = https://github.com/pbrisbin/vim-syntax-shakespeare.git
+[submodule "bundle/vim-test"]
+	path = bundle/vim-test
+	url = https://github.com/janko/vim-test.git
