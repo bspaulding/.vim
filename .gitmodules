@@ -196,3 +196,6 @@
 [submodule "bundle/vim-test"]
 	path = bundle/vim-test
 	url = https://github.com/janko/vim-test.git
+[submodule "bundle/vim-dispatch"]
+	path = bundle/vim-dispatch
+	url = https://github.com/tpope/vim-dispatch.git
