@@ -165,16 +165,17 @@ let g:ale_linters = {
 \ 'javascript': ['eslint', 'prettier', 'flow'],
 \ 'json': ['eslint', 'prettier'],
 \ 'scala': ['sbtserver'],
+\ 'python': ['black'],
 \}
 let g:ale_fixers = {
-\	'css': ['prettier'],
-\	'html': ['prettier'],
-\	'javascript': ['eslint', 'prettier'],
-\	'json': ['eslint', 'prettier'],
-\	'python': [],
-\	'rust': ['rustfmt'],
-\	'sql': ['sqlfmt'],
-\	'typescript': ['prettier'],
+\ 'css': ['prettier'],
+\ 'html': ['prettier'],
+\ 'javascript': ['eslint', 'prettier'],
+\ 'json': ['eslint', 'prettier'],
+\ 'python': ['black'],
+\ 'rust': ['rustfmt'],
+\ 'sql': ['sqlfmt'],
+\ 'typescript': ['prettier'],
 \ 'haskell': ['hfmt'],
 \ 'scala': ['scalafmt']
 \}
