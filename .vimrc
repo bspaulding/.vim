@@ -46,6 +46,7 @@ set autoread
 set sessionoptions-=options
 set clipboard=unnamed
 set foldlevelstart=99
+" set shellcmdflag=-ic
 
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>bd :bd<CR>
@@ -144,6 +145,9 @@ autocmd BufNewFile,BufReadPost *.svelte set filetype=html
 autocmd BufNewFile,BufReadPost *-dockerfile set filetype=dockerfile
 autocmd BufNewFile,BufReadPost Dockerfile.prod set filetype=dockerfile
 
+" lhs files are haskell
+autocmd BufNewFile,BufReadPost *.lhs set filetype=haskell
+
 autocmd BufRead *.rs :setlocal tags=./rusty-tags.vi;/
 autocmd BufWritePost *.rs :silent! exec "!rusty-tags vi --quiet --start-dir=" . expand('%:p:h') . "&" | redraw!
 
@@ -166,6 +170,7 @@ let g:ale_linters = {
 \ 'json': ['eslint', 'prettier'],
 \ 'scala': ['sbtserver'],
 \ 'python': ['black'],
+\ 'haskell': ['stack_ghc'],
 \}
 let g:ale_fixers = {
 \ 'css': ['prettier'],
