@@ -202,3 +202,6 @@
 [submodule "bundle/vim-pony"]
 	path = bundle/vim-pony
 	url = https://github.com/jakwings/vim-pony.git
+[submodule "bundle/coc"]
+	path = bundle/coc
+	url = https://github.com/neoclide/coc.nvim.git
