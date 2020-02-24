@@ -158,7 +158,7 @@
 	path = bundle/vim-stylus
 	url = git://github.com/wavded/vim-stylus.git
 [submodule "bundle/ack.vim"]
-	path = bundle/ack.vim
+	path = pack/plugins/start/ack.vim
 	url = https://github.com/mileszs/ack.vim.git
 [submodule "dispatch"]
 	path = dispatch
