@@ -88,9 +88,6 @@
 [submodule "bundle/vim-clojure-static"]
 	path = bundle/vim-clojure-static
 	url = git://github.com/guns/vim-clojure-static.git
-[submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
 [submodule "bundle/tslime.vim"]
 	path = bundle/tslime.vim
 	url = https://github.com/jgdavey/tslime.vim.git
