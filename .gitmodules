@@ -164,7 +164,7 @@
 	path = bundle/vim-obsession
 	url = git://github.com/tpope/vim-obsession.git
 [submodule "bundle/haskell-vim"]
-	path = bundle/haskell-vim
+	path = pack/plugins/start/haskell-vim
 	url = https://github.com/neovimhaskell/haskell-vim.git
 [submodule "bundle/vim-hdevtools"]
 	path = bundle/vim-hdevtools
