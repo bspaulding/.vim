@@ -199,9 +199,6 @@
 [submodule "bundle/kotlin-vim"]
 	path = bundle/kotlin-vim
 	url = https://github.com/udalov/kotlin-vim
-[submodule "bundle/night-owl.vim"]
-	path = bundle/night-owl.vim
-	url = https://github.com/haishanh/night-owl.vim.git
 [submodule "pack/plugins/start/lightline"]
 	path = pack/plugins/start/lightline
 	url = https://github.com/itchyny/lightline.vim
