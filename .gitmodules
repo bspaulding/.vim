@@ -104,7 +104,7 @@
 	path = bundle/vim-classpath
 	url = git://github.com/tpope/vim-classpath.git
 [submodule "bundle/fzf.vim"]
-	path = bundle/fzf.vim
+	path = pack/plugins/start/fzf.vim
 	url = git://github.com/junegunn/fzf.vim.git
 [submodule "bundle/elm-vim"]
 	path = pack/plugins/start/elm-vim
