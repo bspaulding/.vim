@@ -40,9 +40,6 @@
 [submodule "bundle/vim-colorschemes"]
 	path = bundle/vim-colorschemes
 	url = git://github.com/flazz/vim-colorschemes.git
-[submodule "bundle/emmet-vim"]
-	path = bundle/emmet-vim
-	url = https://github.com/mattn/emmet-vim.git
 [submodule "bundle/vim-jsx"]
 	path = bundle/vim-jsx
 	url = https://github.com/mxw/vim-jsx.git
