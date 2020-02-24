@@ -100,9 +100,6 @@
 [submodule "bundle/tslime.vim"]
 	path = bundle/tslime.vim
 	url = https://github.com/jgdavey/tslime.vim.git
-[submodule "bundle/rainbow_parentheses.vim"]
-	path = bundle/rainbow_parentheses.vim
-	url = https://github.com/kien/rainbow_parentheses.vim.git
 [submodule "bundle/vim-cljfmt"]
 	path = bundle/vim-cljfmt
 	url = https://github.com/venantius/vim-cljfmt.git
