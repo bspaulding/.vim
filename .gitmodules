@@ -110,7 +110,7 @@
 	path = bundle/fzf.vim
 	url = git://github.com/junegunn/fzf.vim.git
 [submodule "bundle/elm-vim"]
-	path = bundle/elm-vim
+	path = pack/plugins/start/elm-vim
 	url = https://github.com/ElmCast/elm-vim.git
 [submodule "bundle/purescript-vim"]
 	path = bundle/purescript-vim
