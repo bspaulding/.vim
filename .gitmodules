@@ -161,7 +161,7 @@
 	path = bundle/tsuquyomi
 	url = https://github.com/Quramy/tsuquyomi.git
 [submodule "bundle/codi.vim"]
-	path = bundle/codi.vim
+	path = pack/plugins/start/codi.vim
 	url = https://github.com/metakirby5/codi.vim.git
 [submodule "bundle/python-syntax"]
 	path = bundle/python-syntax
