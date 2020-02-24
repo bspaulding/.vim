@@ -122,7 +122,7 @@
 	path = bundle/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim.git
 [submodule "bundle/nginx.vim"]
-	path = bundle/nginx.vim
+	path = pack/plugins/start/nginx.vim
 	url = https://github.com/chr4/nginx.vim.git
 [submodule "bundle/vim-tsv"]
 	path = bundle/vim-tsv
