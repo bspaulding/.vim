@@ -106,9 +106,6 @@
 [submodule "bundle/elm-vim"]
 	path = pack/plugins/start/elm-vim
 	url = https://github.com/ElmCast/elm-vim.git
-[submodule "bundle/purescript-vim"]
-	path = bundle/purescript-vim
-	url = https://github.com/raichoo/purescript-vim.git
 [submodule "bundle/ale"]
 	path = pack/plugins/start/ale
 	url = https://github.com/w0rp/ale.git
