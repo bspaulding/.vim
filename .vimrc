@@ -9,7 +9,7 @@ endif
 syntax enable
 colorscheme one
 set background=dark
-let g:airline_theme='one'
+let g:lightline = { 'colorscheme': 'one' }
 
 hi clear SignColumn
 
