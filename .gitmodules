@@ -23,7 +23,7 @@
 	path = bundle/vim-arduino-ino
 	url = git://github.com/jplaut/vim-arduino-ino.git
 [submodule "bundle/loremipsum"]
-	path = bundle/loremipsum
+	path = pack/plugins/start/loremipsum
 	url = git://github.com/vim-scripts/loremipsum.git
 [submodule "bundle/editorconfig-vim"]
 	path = pack/plugins/start/editorconfig-vim
