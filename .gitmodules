@@ -43,9 +43,6 @@
 [submodule "bundle/vim-jsx"]
 	path = pack/plugins/start/vim-jsx
 	url = https://github.com/mxw/vim-jsx.git
-[submodule "bundle/vim-jsbeautify"]
-	path = pack/plugins/start/vim-jsbeautify
-	url = https://github.com/maksimr/vim-jsbeautify.git
 [submodule "bundle/vim-colors-solarized"]
 	path = pack/plugins/start/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
