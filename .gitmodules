@@ -10,9 +10,6 @@
 [submodule "bundle/tcomment_vim"]
 	path = bundle/tcomment_vim
 	url = git://github.com/tomtom/tcomment_vim.git
-[submodule "bundle/vim-bundler"]
-	path = bundle/vim-bundler
-	url = git://github.com/tpope/vim-bundler.git
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
@@ -59,7 +56,7 @@
 	path = bundle/vim-elixir
 	url = https://github.com/elixir-lang/vim-elixir.git
 [submodule "bundle/vim-surround"]
-	path = bundle/vim-surround
+	path = pack/plugins/start/vim-surround
 	url = git://github.com/tpope/vim-surround.git
 [submodule "dash.vim"]
 	path = dash.vim
