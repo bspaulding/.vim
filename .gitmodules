@@ -149,7 +149,7 @@
 	path = pack/plugins/start/codi.vim
 	url = https://github.com/metakirby5/codi.vim.git
 [submodule "bundle/python-syntax"]
-	path = bundle/python-syntax
+	path = pack/plugins/start/python-syntax
 	url = https://github.com/vim-python/python-syntax.git
 [submodule "bundle/vim-orgmode"]
 	path = bundle/vim-orgmode
