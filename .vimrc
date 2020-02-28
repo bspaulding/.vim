@@ -285,3 +285,11 @@ nmap <silent> t<C-l> :TestLast<CR>
 nmap <silent> t<C-g> :TestVisit<CR>
 let test#strategy = "vimterminal"
 let test#vim#term_position = "belowright"
+
+" codi interps
+let g:codi#interpreters = {
+	\ 'scala': {
+    \ 'bin': 'scala',
+    \ 'prompt': 'scala> ',
+  	\ }
+	\ }
