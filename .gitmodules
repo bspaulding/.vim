@@ -175,3 +175,6 @@
 [submodule "pack/plugins/start/lightline"]
 	path = pack/plugins/start/lightline
 	url = https://github.com/itchyny/lightline.vim
+[submodule "pack/plugins/start/vim-fish"]
+	path = pack/plugins/start/vim-fish
+	url = https://github.com/dag/vim-fish.git
