@@ -163,7 +163,7 @@ nnoremap <leader>p :ALEFix<cr>
 let g:ale_linters = {
 \ 'javascript': ['eslint', 'prettier', 'flow'],
 \ 'json': ['eslint', 'prettier'],
-\ 'scala': [],
+\ 'scala': ['metals'],
 \ 'python': ['black'],
 \ 'haskell': ['stack_ghc'],
 \}
