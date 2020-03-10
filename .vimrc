@@ -224,37 +224,37 @@ let g:clj_fmt_autosave = 0
 
 function JSOpenTestFile()
   let testPath = substitute(@%, "\.js$", ".test.js", "")
-	if filereadable(testPath)
-		execute 'vsplit' testPath
-		return
-	endif
+  if filereadable(testPath)
+    execute 'vsplit' testPath
+    return
+  endif
   let specPath = substitute(@%, "\.js$", ".spec.js", "")
-	if filereadable(specPath)
-		execute 'vsplit' specPath
-		return
-	endif
+  if filereadable(specPath)
+    execute 'vsplit' specPath
+    return
+  endif
   let testPath = substitute(@%, "\.ts$", ".test.ts", "")
-	if filereadable(testPath)
-		execute 'vsplit' testPath
-		return
-	endif
+  if filereadable(testPath)
+    execute 'vsplit' testPath
+    return
+  endif
   let testPath = substitute(@%, "\.tsx$", ".test.tsx", "")
-	if filereadable(testPath)
-		execute 'vsplit' testPath
-		return
-	endif
+  if filereadable(testPath)
+    execute 'vsplit' testPath
+    return
+  endif
 endfunction
 nnoremap <Leader>t :call JSOpenTestFile()<CR>
 
 function JestRunFile()
-	silent !clear
-	execute "!jest --silent " . bufname("%")
+  silent !clear
+  execute "!jest --silent " . bufname("%")
 endfunction
 nnoremap <Leader>j :call JestRunFile()<CR>
 
 function JestRunUpdateSnaps()
-	silent !clear
-	execute "!jest --silent -u " . bufname("%")
+  silent !clear
+  execute "!jest --silent -u " . bufname("%")
 endfunction
 nnoremap <Leader>J :call JestRunUpdateSnaps()<CR>
 
@@ -300,8 +300,8 @@ let test#vim#term_position = "belowright"
 
 " codi interps
 let g:codi#interpreters = {
-	\ 'scala': {
+  \ 'scala': {
     \ 'bin': 'scala',
     \ 'prompt': 'scala> ',
-  	\ }
-	\ }
+    \ }
+  \ }
