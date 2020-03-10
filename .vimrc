@@ -38,6 +38,7 @@ set autoread
 set sessionoptions-=options
 set clipboard=unnamed
 set foldlevelstart=99
+set noshowmode
 " set shellcmdflag=-ic
 
 nnoremap <Leader>w :w<CR>
