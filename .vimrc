@@ -54,7 +54,9 @@ set rtp+=~/.fzf
 nnoremap <expr> <Leader>f (len(system('git rev-parse')) ? ':Files' : ':GFiles')."\<CR>"
 " nnoremap <Leader>fb :BTags<CR>
 " nnoremap <Leader>ft :Tags<CR>
-let g:fzf_tags_command = 'ctags -R'
+let g:fzf_tags_command = 'ctags -R .'
+autocmd! FileType fzf set laststatus=0 noruler
+  \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
 
 " ack.vim use rg or ag if available
 if executable('rg')
