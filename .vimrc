@@ -7,7 +7,16 @@ endif
 syntax enable
 colorscheme one
 set background=dark
-let g:lightline = { 'colorscheme': 'one' }
+let g:lightline = {
+  \ 'colorscheme': 'one',
+  \ 'active': {
+  \   'left': [['mode', 'paste'],
+  \            ['git_head', 'readonly', 'filename', 'modified']],
+  \ },
+  \ 'component_function': {
+  \   'git_head': 'FugitiveHead'
+  \ }
+\ }
 
 hi clear SignColumn
 
