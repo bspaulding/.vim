@@ -51,7 +51,7 @@ nnoremap <Leader>c :noh<CR>
 
 " fzf
 set rtp+=~/.fzf
-nnoremap <Leader>f :FZF<CR>
+nnoremap <expr> <Leader>f (len(system('git rev-parse')) ? ':Files' : ':GFiles')."\<CR>"
 " nnoremap <Leader>fb :BTags<CR>
 " nnoremap <Leader>ft :Tags<CR>
 let g:fzf_tags_command = 'ctags -R'
