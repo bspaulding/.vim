@@ -40,6 +40,7 @@ set clipboard=unnamed
 set foldlevelstart=99
 set noshowmode
 " set shellcmdflag=-ic
+let g:netrw_liststyle= 3 " 3 == tree style
 
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>bd :bd<CR>
