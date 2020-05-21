@@ -157,7 +157,7 @@ let g:ale_echo_msg_format = '%linter% says %s'
 let g:ale_javascript_prettier_use_local_config = 1
 nnoremap <leader>an :ALENextWrap<cr>
 nnoremap <leader>ap :ALEPreviousWrap<cr>
-nnoremap <leader>ad :ALEDetail<cr>
+nnoremap <leader>am :ALEDetail<cr>
 nnoremap <leader>p :ALEFix<cr>
 " let g:ale_sign_error = 'â ï¸'
 " let g:ale_sign_warning = 'â ï¸'
