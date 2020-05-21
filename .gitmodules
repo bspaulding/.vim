@@ -178,3 +178,6 @@
 [submodule "pack/plugins/start/vim-fish"]
 	path = pack/plugins/start/vim-fish
 	url = https://github.com/dag/vim-fish.git
+[submodule "pack/plugins/start/night-owl.vim"]
+	path = pack/plugins/start/night-owl.vim
+	url = https://github.com/haishanh/night-owl.vim.git

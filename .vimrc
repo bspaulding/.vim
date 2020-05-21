@@ -5,18 +5,49 @@ if (has("termguicolors"))
   set termguicolors
 endif
 syntax enable
-colorscheme one
-set background=dark
-let g:lightline = {
-  \ 'colorscheme': 'one',
-  \ 'active': {
-  \   'left': [['mode', 'paste'],
-  \            ['git_head', 'readonly', 'filename', 'modified']],
-  \ },
-  \ 'component_function': {
-  \   'git_head': 'FugitiveHead'
+function! ThemeOneDark()
+  colorscheme one
+  set background=dark
+  let g:lightline = {
+    \ 'colorscheme': 'one',
+    \ 'active': {
+    \   'left': [['mode', 'paste'],
+    \            ['git_head', 'readonly', 'filename', 'modified']],
+    \ },
+    \ 'component_function': {
+    \   'git_head': 'FugitiveHead'
+    \ }
   \ }
-\ }
+endfunction
+function! ThemeOneLight()
+  colorscheme one
+  set background=light
+  let g:lightline = {
+    \ 'colorscheme': 'one',
+    \ 'active': {
+    \   'left': [['mode', 'paste'],
+    \            ['git_head', 'readonly', 'filename', 'modified']],
+    \ },
+    \ 'component_function': {
+    \   'git_head': 'FugitiveHead'
+    \ }
+  \ }
+endfunction
+function! ThemeNightOwl()
+  colorscheme night-owl
+  let g:lightline = {
+    \ 'colorscheme': 'nightowl',
+    \ 'active': {
+    \   'left': [['mode', 'paste'],
+    \            ['git_head', 'readonly', 'filename', 'modified']],
+    \ },
+    \ 'component_function': {
+    \   'git_head': 'FugitiveHead'
+    \ }
+  \ }
+endfunction
+
+call ThemeOneDark()
 
 hi clear SignColumn
 
