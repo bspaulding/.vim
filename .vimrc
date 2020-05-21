@@ -47,7 +47,11 @@ function! ThemeNightOwl()
   \ }
 endfunction
 
-call ThemeOneDark()
+call ThemeNightOwl()
+
+" italic support
+set t_ZH=[3m
+set t_ZR=[23m
 
 hi clear SignColumn
 
