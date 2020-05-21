@@ -166,7 +166,8 @@ let g:ale_linters = {
 \ 'json': ['eslint', 'prettier'],
 \ 'scala': ['metals'],
 \ 'python': ['black'],
-\ 'haskell': ['stack_ghc'],
+\ 'haskell': ['hie', 'stack_ghc'],
+\ 'elm': ['elm_ls']
 \}
 let g:ale_fixers = {
 \ 'css': ['prettier'],
@@ -178,7 +179,8 @@ let g:ale_fixers = {
 \ 'sql': ['sqlfmt'],
 \ 'typescript': ['prettier'],
 \ 'haskell': ['hfmt'],
-\ 'scala': ['scalafmt']
+\ 'scala': ['scalafmt'],
+\ 'elm': ['elm-format']
 \}
 
 " vp doesn't replace paste buffer
