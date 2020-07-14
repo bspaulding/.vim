@@ -181,3 +181,6 @@
 [submodule "pack/plugins/start/night-owl.vim"]
 	path = pack/plugins/start/night-owl.vim
 	url = https://github.com/haishanh/night-owl.vim.git
+[submodule "pack/plugins/start/vim-hocon"]
+	path = pack/plugins/start/vim-hocon
+	url = https://github.com/GEverding/vim-hocon.git
