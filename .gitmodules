@@ -184,3 +184,6 @@
 [submodule "pack/plugins/start/vim-hocon"]
 	path = pack/plugins/start/vim-hocon
 	url = https://github.com/GEverding/vim-hocon.git
+[submodule "pack/plugins/start/vim-HiLinkTrace"]
+	path = pack/plugins/start/vim-HiLinkTrace
+	url = https://github.com/gerw/vim-HiLinkTrace.git
