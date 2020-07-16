@@ -57,7 +57,6 @@ hi clear SignColumn
 
 filetype plugin indent on
 set omnifunc=syntaxcomplete#Complete
-let g:EditorConfig_core_mode = 'external_command'
 set nowrap
 set directory=~/.vim/swp
 set backupdir=~/.vim/swp
