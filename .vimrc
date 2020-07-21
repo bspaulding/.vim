@@ -71,6 +71,7 @@ let mapleader = "\<Space>"
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 set tabstop=2
 set relativenumber
+set signcolumn=number
 set autoread
 set sessionoptions-=options
 set clipboard=unnamed
