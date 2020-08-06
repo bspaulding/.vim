@@ -190,3 +190,6 @@
 [submodule "pack/plugins/start/coc.nvim"]
 	path = pack/plugins/start/coc.nvim
 	url = https://github.com/neoclide/coc.nvim.git
+[submodule "pack/plugins/start/purescript-vim"]
+	path = pack/plugins/start/purescript-vim
+	url = https://github.com/purescript-contrib/purescript-vim.git
