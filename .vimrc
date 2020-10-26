@@ -84,7 +84,7 @@ nnoremap <Leader>bd :bd<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>k :lnext<CR>
 nnoremap <Leader>j :lprevious<CR>
-nnoremap cf :e <cfile><CR>
+" nnoremap cf :e <cfile><CR>
 nnoremap <Leader>c :noh<CR>
 
 " fzf
