@@ -193,3 +193,6 @@
 [submodule "pack/plugins/start/purescript-vim"]
 	path = pack/plugins/start/purescript-vim
 	url = https://github.com/purescript-contrib/purescript-vim.git
+[submodule "pack/plugins/start/night_owl_light.vim"]
+	path = pack/plugins/start/night_owl_light.vim
+	url = https://github.com/macguirerintoul/night_owl_light.vim.git
