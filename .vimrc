@@ -50,7 +50,7 @@ function! ThemeNightOwl()
   \ }
 endfunction
 
-call ThemeOneLight()
+call ThemeNightOwl()
 
 " italic support
 set t_ZH=[3m
