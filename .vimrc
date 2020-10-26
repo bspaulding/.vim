@@ -98,9 +98,9 @@ autocmd! FileType fzf set laststatus=0 noruler
 
 " ack.vim use rg or ag if available
 if executable('rg')
-  let g:ackprg = 'rg --vimgrep --no-heading'
+  let g:ackprg = 'rg --vimgrep --no-heading --smart-case'
 elseif executable('ag')
-  let g:ackprg = 'ag --vimgrep'
+  let g:ackprg = 'ag --vimgrep --smart-case'
 endif
 command Ag Ack
 
