@@ -49,6 +49,21 @@ function! ThemeNightOwl()
     \ }
   \ }
 endfunction
+function! ThemeLightOwl()
+  colorscheme night_owl_light
+	set background=light " just for lightline, using one light there for now
+  let g:lightline = {
+    \ 'colorscheme': 'one',
+    \ 'active': {
+    \   'left': [['mode', 'paste'],
+    \            ['cocstatus', 'git_head', 'readonly', 'filename', 'modified']],
+    \ },
+    \ 'component_function': {
+    \   'git_head': 'FugitiveHead',
+    \   'cocstatus': 'coc#status'
+    \ }
+  \ }
+endfunction
 
 call ThemeNightOwl()
 
