@@ -167,7 +167,11 @@ let g:loremipsum_marker = {}
 :nnoremap <leader>ev :tabe $MYVIMRC<cr>
 :nnoremap <leader>sv :source $MYVIMRC<cr>
 
-:nnoremap <leader>et :tabe ~/Dropbox/Shared\ With\ Work/todo.md<cr>
+let g:bs_notes_file = $VIM_NOTES_FILE
+if empty($VIM_NOTES_FILE)
+	let g:bs_notes_file = '~/vim_notes.md'
+endif
+:nnoremap <expr> <leader>et ":tabe" . g:bs_notes_file . "<cr>"
 
 " reload files automatically
 :autocmd FileChangedShell * :e
