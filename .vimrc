@@ -12,11 +12,10 @@ function! ThemeOneDark()
     \ 'colorscheme': 'one',
     \ 'active': {
     \   'left': [['mode', 'paste'],
-    \            ['cocstatus', 'git_head', 'readonly', 'filename', 'modified']],
+    \            ['git_head', 'readonly', 'filename', 'modified']],
     \ },
     \ 'component_function': {
-    \   'git_head': 'FugitiveHead',
-    \   'cocstatus': 'coc#status'
+    \   'git_head': 'FugitiveHead'
     \ }
   \ }
 endfunction
@@ -27,11 +26,10 @@ function! ThemeOneLight()
     \ 'colorscheme': 'one',
     \ 'active': {
     \   'left': [['mode', 'paste'],
-    \            ['cocstatus', 'git_head', 'readonly', 'filename', 'modified']],
+    \            ['git_head', 'readonly', 'filename', 'modified']],
     \ },
     \ 'component_function': {
-    \   'git_head': 'FugitiveHead',
-    \   'cocstatus': 'coc#status'
+    \   'git_head': 'FugitiveHead'
     \ }
   \ }
 endfunction
@@ -41,11 +39,10 @@ function! ThemeNightOwl()
     \ 'colorscheme': 'nightowl',
     \ 'active': {
     \   'left': [['mode', 'paste'],
-    \            ['cocstatus', 'git_head', 'readonly', 'filename', 'modified']],
+    \            ['git_head', 'readonly', 'filename', 'modified']],
     \ },
     \ 'component_function': {
-    \   'git_head': 'FugitiveHead',
-    \   'cocstatus': 'coc#status'
+    \   'git_head': 'FugitiveHead'
     \ }
   \ }
 endfunction
@@ -56,11 +53,10 @@ function! ThemeLightOwl()
     \ 'colorscheme': 'one',
     \ 'active': {
     \   'left': [['mode', 'paste'],
-    \            ['cocstatus', 'git_head', 'readonly', 'filename', 'modified']],
+    \            ['git_head', 'readonly', 'filename', 'modified']],
     \ },
     \ 'component_function': {
-    \   'git_head': 'FugitiveHead',
-    \   'cocstatus': 'coc#status'
+    \   'git_head': 'FugitiveHead'
     \ }
   \ }
 endfunction
