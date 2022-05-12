@@ -115,6 +115,8 @@ elseif executable('ag')
 endif
 command Ag Ack
 
+nnoremap <expr> <Leader>[ (':Ack '.expand("<cword>")."\<CR>")
+
 " run checktime more than randomly
 autocmd BufEnter,BufWinEnter,CursorHold,CursorHoldI * :checktime
 
