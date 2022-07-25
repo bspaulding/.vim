@@ -127,9 +127,6 @@
 [submodule "bundle/rust.vim"]
 	path = pack/plugins/start/rust.vim
 	url = https://github.com/rust-lang/rust.vim.git
-[submodule "bundle/jedi-vim"]
-	path = pack/plugins/start/jedi-vim
-	url = https://github.com/davidhalter/jedi-vim.git
 [submodule "bundle/vim-stylus"]
 	path = pack/plugins/start/vim-stylus
 	url = git://github.com/wavded/vim-stylus.git
