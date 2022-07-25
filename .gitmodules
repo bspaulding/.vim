@@ -133,9 +133,6 @@
 [submodule "dispatch"]
 	path = dispatch
 	url = https://tpope.io/vim/dispatch.git
-[submodule "bundle/tsuquyomi"]
-	path = pack/plugins/start/tsuquyomi
-	url = https://github.com/Quramy/tsuquyomi.git
 [submodule "bundle/codi.vim"]
 	path = pack/plugins/start/codi.vim
 	url = https://github.com/metakirby5/codi.vim.git
