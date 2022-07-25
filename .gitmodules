@@ -106,9 +106,6 @@
 [submodule "bundle/ale"]
 	path = pack/plugins/start/ale
 	url = https://github.com/w0rp/ale.git
-[submodule "bundle/vim-reason-plus"]
-	path = pack/plugins/start/vim-reason-plus
-	url = https://github.com/reasonml-editor/vim-reason-plus.git
 [submodule "bundle/vim-one"]
 	path = pack/plugins/start/vim-one
 	url = https://github.com/rakr/vim-one.git
