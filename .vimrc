@@ -219,7 +219,7 @@ let g:ale_linters = {
 \ 'javascript': ['eslint', 'prettier', 'flow'],
 \ 'json': ['eslint', 'prettier'],
 \ 'scala': ['metals'],
-\ 'python': ['black'],
+\ 'python': ['mypy'],
 \ 'haskell': ['ghcide'],
 \ 'elm': ['elm_ls']
 \}
