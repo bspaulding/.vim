@@ -221,18 +221,20 @@ let g:ale_linters = {
 \ 'scala': ['metals'],
 \ 'python': ['mypy'],
 \ 'haskell': ['ghcide'],
-\ 'elm': ['elm_ls']
+\ 'elm': ['elm_ls'],
+\ 'typescript': ['tsserver'],
+\ 'typescriptreact': ['tsserver']
 \}
 let g:ale_fixers = {
 \ 'css': ['prettier'],
 \ 'html': ['prettier'],
 \ 'javascript': ['eslint', 'prettier'],
+\ 'typescript': ['prettier'],
+\ 'typescriptreact': ['prettier'],
 \ 'json': ['eslint', 'prettier'],
 \ 'python': ['black'],
 \ 'rust': ['rustfmt'],
 \ 'sql': ['sqlfmt'],
-\ 'typescript': ['prettier'],
-\ 'typescriptreact': ['prettier'],
 \ 'haskell': ['hfmt'],
 \ 'scala': ['scalafmt'],
 \ 'elm': ['elm-format'],
