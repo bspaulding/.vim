@@ -190,3 +190,6 @@
 [submodule "pack/plugins/start/vim-terraform"]
 	path = pack/plugins/start/vim-terraform
 	url = git@github.com:hashivim/vim-terraform.git
+[submodule "pack/plugins/start/lean.nvim"]
+	path = pack/plugins/start/lean.nvim
+	url = https://github.com/Julian/lean.nvim.git
