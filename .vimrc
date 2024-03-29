@@ -81,6 +81,8 @@ set backspace=indent,eol,start
 let mapleader = "\<Space>"
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 set tabstop=2
+set shiftwidth=2
+set expandtab
 set relativenumber
 set signcolumn=number
 set autoread
@@ -219,7 +221,7 @@ let g:ale_linters = {
 \ 'javascript': ['eslint', 'prettier', 'flow'],
 \ 'json': ['eslint', 'prettier'],
 \ 'scala': ['metals'],
-\ 'python': ['mypy'],
+\ 'python': ['mypy', 'flake8'],
 \ 'haskell': ['ghcide'],
 \ 'elm': ['elm_ls'],
 \ 'typescript': ['tsserver'],
@@ -232,7 +234,7 @@ let g:ale_fixers = {
 \ 'typescript': ['prettier'],
 \ 'typescriptreact': ['prettier'],
 \ 'json': ['eslint', 'prettier'],
-\ 'python': ['black'],
+\ 'python': ['black', 'isort'],
 \ 'rust': ['rustfmt'],
 \ 'sql': ['sqlfmt'],
 \ 'haskell': ['hfmt'],
@@ -275,6 +277,13 @@ augroup filetype_vim
     autocmd FileType vim setlocal foldmethod=marker
 augroup END
 " }}}
+
+augroup filetype_php
+    autocmd!
+    autocmd FileType php setlocal expandtab
+    autocmd FileType php setlocal tabstop=4
+    autocmd FileType php setlocal shiftwidth=4
+augroup END
 
 " tslime
 vmap <C-c><C-c> <Plug>SendSelectionToTmux
