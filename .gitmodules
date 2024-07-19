@@ -145,9 +145,6 @@
 [submodule "bundle/haskell-vim"]
 	path = pack/plugins/start/haskell-vim
 	url = https://github.com/neovimhaskell/haskell-vim.git
-[submodule "bundle/vim-hdevtools"]
-	path = pack/plugins/start/vim-hdevtools
-	url = https://github.com/bitc/vim-hdevtools.git
 [submodule "bundle/vim-syntax-shakespeare"]
 	path = pack/plugins/start/vim-syntax-shakespeare
 	url = https://github.com/pbrisbin/vim-syntax-shakespeare.git
