@@ -10,9 +10,6 @@
 [submodule "bundle/tcomment_vim"]
 	path = pack/plugins/start/tcomment_vim
 	url = git://github.com/tomtom/tcomment_vim.git
-[submodule "bundle/vim-fugitive"]
-	path = pack/plugins/start/vim-fugitive
-	url = git://github.com/tpope/vim-fugitive.git
 [submodule "bundle/vim-rails"]
 	path = pack/plugins/start/vim-rails
 	url = git://github.com/tpope/vim-rails.git
