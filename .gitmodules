@@ -19,9 +19,6 @@
 [submodule "bundle/vim-arduino-ino"]
 	path = pack/plugins/start/vim-arduino-ino
 	url = git://github.com/jplaut/vim-arduino-ino.git
-[submodule "bundle/loremipsum"]
-	path = pack/plugins/start/loremipsum
-	url = git://github.com/vim-scripts/loremipsum.git
 [submodule "bundle/editorconfig-vim"]
 	path = pack/plugins/start/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
