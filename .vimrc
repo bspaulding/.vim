@@ -365,6 +365,20 @@ nmap <silent> t<C-g> :TestVisit<CR>
 let test#strategy = "vimterminal"
 let test#vim#term_position = "belowright"
 
+let g:vim_test_docker_container = 'app'
+let g:vim_test_docker_extra_args = ''
+let g:vim_test_docker_extra_args_docker = ''
+
+function! VimTestDockerCompose(cmd) abort
+  let tokens = split(a:cmd)
+	return 'docker compose exec ' . g:vim_test_docker_extra_args_docker . ' ' .  g:vim_test_docker_container . ' ' . join(l:tokens[0:2] + [g:vim_test_docker_extra_args] + tokens[3:])
+endfunction
+
+let g:test#custom_transformations = {
+  \ 'docker-compose': function('VimTestDockerCompose'),
+  \ }
+" let g:test#transformation = 'docker-compose'
+
 " codi interps
 let g:codi#interpreters = {
   \ 'scala': {
@@ -372,3 +386,7 @@ let g:codi#interpreters = {
     \ 'prompt': 'scala> ',
     \ }
   \ }
+nmap <silent> t<C-n> :TestNearest<CR>
+
+" copy buffer path to clipboard
+nmap <silent> c<C-p> :let @+ = expand("%:p")<cr>
