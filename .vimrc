@@ -222,7 +222,7 @@ let g:ale_linters = {
 \ 'json': ['eslint', 'prettier'],
 \ 'scala': ['metals'],
 \ 'python': ['mypy', 'flake8'],
-\ 'haskell': ['ghcide'],
+\ 'haskell': ['hls'],
 \ 'elm': ['elm_ls'],
 \ 'typescript': ['tsserver'],
 \ 'typescriptreact': ['tsserver']
