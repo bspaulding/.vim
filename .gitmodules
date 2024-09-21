@@ -4,9 +4,6 @@
 [submodule "bundle/vim-rails"]
 	path = pack/plugins/start/vim-rails
 	url = git://github.com/tpope/vim-rails.git
-[submodule "bundle/vim-ruby-refactoring"]
-	path = pack/plugins/start/vim-ruby-refactoring
-	url = git://github.com/ecomba/vim-ruby-refactoring.git
 [submodule "bundle/vim-arduino-ino"]
 	path = pack/plugins/start/vim-arduino-ino
 	url = git://github.com/jplaut/vim-arduino-ino.git
