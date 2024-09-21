@@ -7,24 +7,15 @@
 [submodule "pack/plugins/start/vim-arduino-ino"]
 	path = pack/plugins/start/vim-arduino-ino
 	url = https://github.com/jplaut/vim-arduino-ino.git
-[submodule "pack/plugins/start/editorconfig-vim"]
-	path = pack/plugins/start/editorconfig-vim
-	url = https://github.com/editorconfig/editorconfig-vim.git
 [submodule "pack/plugins/start/vim-javascript"]
 	path = pack/plugins/start/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
 [submodule "pack/plugins/start/vim-ruby"]
 	path = pack/plugins/start/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
-[submodule "pack/plugins/start/vim-colorschemes"]
-	path = pack/plugins/start/vim-colorschemes
-	url = https://github.com/flazz/vim-colorschemes.git
 [submodule "pack/plugins/start/vim-jsx"]
 	path = pack/plugins/start/vim-jsx
 	url = https://github.com/mxw/vim-jsx.git
-[submodule "pack/plugins/start/vim-colors-solarized"]
-	path = pack/plugins/start/vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "pack/plugins/start/vim-elixir"]
 	path = pack/plugins/start/vim-elixir
 	url = https://github.com/elixir-lang/vim-elixir.git
@@ -64,15 +55,6 @@
 [submodule "pack/plugins/start/tslime.vim"]
 	path = pack/plugins/start/tslime.vim
 	url = https://github.com/jgdavey/tslime.vim.git
-[submodule "pack/plugins/start/vim-cljfmt"]
-	path = pack/plugins/start/vim-cljfmt
-	url = https://github.com/venantius/vim-cljfmt.git
-[submodule "pack/plugins/start/vim-eastwood"]
-	path = pack/plugins/start/vim-eastwood
-	url = https://github.com/venantius/vim-eastwood.git
-[submodule "pack/plugins/start/vim-classpath"]
-	path = pack/plugins/start/vim-classpath
-	url = https://github.com/tpope/vim-classpath.git
 [submodule "pack/plugins/start/fzf.vim"]
 	path = pack/plugins/start/fzf.vim
 	url = https://github.com/junegunn/fzf.vim.git
@@ -100,21 +82,12 @@
 [submodule "pack/plugins/start/rust.vim"]
 	path = pack/plugins/start/rust.vim
 	url = https://github.com/rust-lang/rust.vim.git
-[submodule "pack/plugins/start/vim-stylus"]
-	path = pack/plugins/start/vim-stylus
-	url = https://github.com/wavded/vim-stylus.git
 [submodule "pack/plugins/start/ack.vim"]
 	path = pack/plugins/start/ack.vim
 	url = https://github.com/mileszs/ack.vim.git
-[submodule "pack/plugins/start/vim-obsession"]
-	path = pack/plugins/start/vim-obsession
-	url = https://github.com/tpope/vim-obsession.git
 [submodule "pack/plugins/start/haskell-vim"]
 	path = pack/plugins/start/haskell-vim
 	url = https://github.com/neovimhaskell/haskell-vim.git
-[submodule "pack/plugins/start/vim-syntax-shakespeare"]
-	path = pack/plugins/start/vim-syntax-shakespeare
-	url = https://github.com/pbrisbin/vim-syntax-shakespeare.git
 [submodule "pack/plugins/start/vim-test"]
 	path = pack/plugins/start/vim-test
 	url = https://github.com/janko/vim-test.git
@@ -136,12 +109,6 @@
 [submodule "pack/plugins/start/night-owl.vim"]
 	path = pack/plugins/start/night-owl.vim
 	url = https://github.com/haishanh/night-owl.vim.git
-[submodule "pack/plugins/start/vim-hocon"]
-	path = pack/plugins/start/vim-hocon
-	url = https://github.com/GEverding/vim-hocon.git
-[submodule "pack/plugins/start/vim-HiLinkTrace"]
-	path = pack/plugins/start/vim-HiLinkTrace
-	url = https://github.com/gerw/vim-HiLinkTrace.git
 [submodule "pack/plugins/start/purescript-vim"]
 	path = pack/plugins/start/purescript-vim
 	url = https://github.com/purescript-contrib/purescript-vim.git
