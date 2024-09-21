@@ -115,9 +115,6 @@
 [submodule "bundle/ack.vim"]
 	path = pack/plugins/start/ack.vim
 	url = https://github.com/mileszs/ack.vim.git
-[submodule "dispatch"]
-	path = dispatch
-	url = https://tpope.io/vim/dispatch.git
 [submodule "bundle/codi.vim"]
 	path = pack/plugins/start/codi.vim
 	url = https://github.com/metakirby5/codi.vim.git
