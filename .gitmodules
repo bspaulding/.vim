@@ -94,9 +94,6 @@
 [submodule "pack/plugins/start/vim-dispatch"]
 	path = pack/plugins/start/vim-dispatch
 	url = https://github.com/tpope/vim-dispatch.git
-[submodule "pack/plugins/start/vim-pony"]
-	path = pack/plugins/start/vim-pony
-	url = https://github.com/jakwings/vim-pony.git
 [submodule "pack/plugins/start/kotlin-vim"]
 	path = pack/plugins/start/kotlin-vim
 	url = https://github.com/udalov/kotlin-vim
