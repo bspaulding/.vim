@@ -1,9 +1,6 @@
 [submodule "bundle/vim-coffee-script"]
 	path = pack/plugins/start/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
-[submodule "bundle/vim-mustache-handlebars"]
-	path = pack/plugins/start/vim-mustache-handlebars
-	url = git://github.com/mustache/vim-mustache-handlebars.git
 [submodule "bundle/tabular"]
 	path = pack/plugins/start/tabular
 	url = git://github.com/godlygeek/tabular.git
