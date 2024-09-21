@@ -115,9 +115,6 @@
 [submodule "bundle/ack.vim"]
 	path = pack/plugins/start/ack.vim
 	url = https://github.com/mileszs/ack.vim.git
-[submodule "bundle/codi.vim"]
-	path = pack/plugins/start/codi.vim
-	url = https://github.com/metakirby5/codi.vim.git
 [submodule "bundle/vim-obsession"]
 	path = pack/plugins/start/vim-obsession
 	url = git://github.com/tpope/vim-obsession.git
