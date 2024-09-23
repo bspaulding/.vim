@@ -28,9 +28,6 @@
 [submodule "pack/plugins/start/vim-gradle"]
 	path = pack/plugins/start/vim-gradle
 	url = https://github.com/tfnico/vim-gradle.git
-[submodule "pack/plugins/start/vim-go"]
-	path = pack/plugins/start/vim-go
-	url = https://github.com/fatih/vim-go.git
 [submodule "pack/plugins/start/vim-autoswap"]
 	path = pack/plugins/start/vim-autoswap
 	url = https://github.com/gioele/vim-autoswap.git
