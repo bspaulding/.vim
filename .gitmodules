@@ -133,6 +133,3 @@
 [submodule "pack/plugins/start/nvim-treesitter"]
 	path = pack/plugins/start/nvim-treesitter
 	url = git@github.com:nvim-treesitter/nvim-treesitter.git
-[submodule "pack/plugins/start/copilot.vim"]
-	path = pack/plugins/start/copilot.vim
-	url = https://github.com/github/copilot.vim.git
