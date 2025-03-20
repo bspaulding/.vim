@@ -207,6 +207,47 @@ autocmd BufWritePost *.rs :silent! exec "!rusty-tags vi --quiet --start-dir=" . 
 let g:xml_syntax_folding=1
 au FileType xml setlocal foldmethod=syntax
 
+" custom ale checkers
+call ale#Set('lean_language_server_executable', 'lean')
+call ale#Set('lean_language_server_config', {})
+function! LeanFindProjectRoot(buffer) abort
+    let l:possible_project_roots = [
+    \   'lakefile.toml',
+    \   'lakefile.lean',
+    \   'lean-toolchain',
+    \   '.git',
+    \   bufname(a:buffer),
+    \]
+
+    for l:possible_root in l:possible_project_roots
+        let l:project_root = ale#path#FindNearestFile(a:buffer, l:possible_root)
+
+        if empty(l:project_root)
+            let l:project_root = ale#path#FindNearestDirectory(a:buffer, l:possible_root)
+        endif
+
+        if !empty(l:project_root)
+            " dir:p expands to /full/path/to/dir/ whereas
+            " file:p expands to /full/path/to/file (no trailing slash)
+            " Appending '/' ensures that :h:h removes the path's last segment
+            " regardless of whether it is a directory or not.
+            return fnamemodify(l:project_root . '/', ':p:h:h')
+        endif
+    endfor
+
+    return ''
+endfunction
+
+call ale#linter#Define('lean', {
+\   'name': 'lean_language_server',
+\   'aliases': ['lean-language-server', 'lean_ls'],
+\   'lsp': 'stdio',
+\   'executable': {b -> ale#Var(b, 'lean_language_server_executable')},
+\   'command': '%e serve',
+\   'project_root': function('LeanFindProjectRoot'),
+\   'lsp_config': {b -> ale#Var(b, 'lean_language_server_config')},
+\})
+
 " ale config
 let g:ale_fix_on_save = 1
 let g:ale_echo_msg_format = '%linter% says %s'
