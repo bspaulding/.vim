@@ -195,7 +195,7 @@ autocmd BufNewFile,BufReadPost *.svelte set filetype=html
 
 " -dockerfile files are dockerfile
 autocmd BufNewFile,BufReadPost *-dockerfile set filetype=dockerfile
-autocmd BufNewFile,BufReadPost Dockerfile.prod set filetype=dockerfile
+autocmd BufNewFile,BufReadPost Dockerfile.* set filetype=dockerfile
 
 " lhs files are haskell
 autocmd BufNewFile,BufReadPost *.lhs set filetype=haskell
@@ -362,8 +362,14 @@ nmap <silent> t<C-f> :TestFile<CR>
 nmap <silent> t<C-s> :TestSuite<CR>
 nmap <silent> t<C-l> :TestLast<CR>
 nmap <silent> t<C-g> :TestVisit<CR>
-let test#strategy = "vimterminal"
-let test#vim#term_position = "belowright"
+if !has('nvim')
+    let test#strategy = "vimterminal"
+    let test#vim#term_position = "belowright"
+endif
+if has('nvim')
+    let test#strategy = "neovim"
+    let test#neovim#term_position = "belowright"
+endif
 
 let g:vim_test_docker_container = 'app'
 let g:vim_test_docker_extra_args = ''
