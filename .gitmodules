@@ -133,3 +133,6 @@
 [submodule "pack/plugins/start/nvim-treesitter"]
 	path = pack/plugins/start/nvim-treesitter
 	url = git@github.com:nvim-treesitter/nvim-treesitter.git
+[submodule "pack/plugins/start/Ionide-vim.git"]
+	path = pack/plugins/start/Ionide-vim.git
+	url = git@github.com:ionide/Ionide-vim.git
