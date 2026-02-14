@@ -282,7 +282,8 @@ let g:ale_fixers = {
 \ 'haskell': ['hfmt'],
 \ 'scala': ['scalafmt'],
 \ 'elm': ['elm-format'],
-\ 'terraform': ['terraform']
+\ 'terraform': ['terraform'],
+\ 'gleam': ['gleam_format']
 \}
 
 " vp doesn't replace paste buffer
