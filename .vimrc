@@ -61,7 +61,8 @@ function! ThemeLightOwl()
   \ }
 endfunction
 
-call ThemeNightOwl()
+" call ThemeNightOwl()
+colorscheme inbedby7pm
 
 " italic support
 set t_ZH=[3m
