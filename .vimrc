@@ -60,9 +60,23 @@ function! ThemeLightOwl()
     \ }
   \ }
 endfunction
+function ThemeInBedBySevenPM()
+  colorscheme inbedby7pm
+  set background=dark
+  let g:lightline = {
+    \ 'colorscheme': 'inbedby7pm',
+    \ 'active': {
+    \   'left': [['mode', 'paste'],
+    \            ['git_head', 'readonly', 'filename', 'modified']],
+    \ },
+    \ 'component_function': {
+    \   'git_head': 'FugitiveHead'
+    \ }
+  \ }
+endfunction
 
 " call ThemeNightOwl()
-colorscheme inbedby7pm
+call ThemeInBedBySevenPM()
 
 " italic support
 set t_ZH=[3m
