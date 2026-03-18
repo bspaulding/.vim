@@ -54,7 +54,7 @@ hi StatusLine      guifg=#efe9fc   guibg=#2d2b55   gui=NONE      ctermfg=189  ct
 hi StatusLineNC    guifg=#7b6fc4   guibg=#2d2b55   gui=NONE      ctermfg=104  ctermbg=54
 hi WildMenu        guifg=#1e1e3f   guibg=#fad000   gui=bold      ctermfg=17   ctermbg=220
 
-hi TabLine         guifg=#7b6fc4   guibg=#2d2b55   gui=NONE      ctermfg=104  ctermbg=54
+hi TabLine         guifg=#a599e9   guibg=#3d3870   gui=NONE      ctermfg=147  ctermbg=60
 hi TabLineFill     guifg=NONE      guibg=#2d2b55   gui=NONE      ctermbg=54
 hi TabLineSel      guifg=#efe9fc   guibg=#1e1e3f   gui=bold      ctermfg=189  ctermbg=17
 

@@ -22,7 +22,9 @@ let s:red       = ['#ff628c', 204]
 let s:orange    = ['#f08d49', 208]
 
 " Each entry is [fg, bg]
-let s:p = {'normal': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'inactive': {}, 'command': {}, 'terminal': {}}
+let s:tab_inactive_bg = ['#3d3870', 60]
+
+let s:p = {'normal': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'inactive': {}, 'command': {}, 'terminal': {}, 'tabline': {}}
 
 " NORMAL - purple accent
 let s:p.normal.left     = [[s:bg, s:purple], [s:white, s:bg_alt]]
@@ -55,6 +57,12 @@ let s:p.command.right   = [[s:bg, s:teal], [s:fg_dim, s:bg_alt]]
 let s:p.terminal.left   = [[s:bg, s:green], [s:white, s:bg_alt]]
 let s:p.terminal.middle = [[s:fg, s:bg]]
 let s:p.terminal.right  = [[s:bg, s:green], [s:fg_dim, s:bg_alt]]
+
+" TABLINE - active tab keeps bg, inactive tabs get mid-purple bg
+let s:p.tabline.left   = [[s:fg_dim, s:tab_inactive_bg]]
+let s:p.tabline.tabsel = [[s:white, s:bg]]
+let s:p.tabline.middle = [[s:fg_dim, s:bg_alt]]
+let s:p.tabline.right  = [[s:fg_dim, s:bg_alt]]
 
 " INACTIVE - dimmed
 let s:p.inactive.left   = [[s:border, s:bg], [s:border, s:bg]]
