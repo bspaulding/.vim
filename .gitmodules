@@ -111,7 +111,7 @@
 	url = https://github.com/macguirerintoul/night_owl_light.vim.git
 [submodule "pack/plugins/start/zig.vim"]
 	path = pack/plugins/start/zig.vim
-	url = https://github.com/ziglang/zig.vim.git
+	url = https://codeberg.org/ziglang/zig.vim.git
 [submodule "pack/plugins/start/lean.nvim"]
 	path = pack/plugins/start/lean.nvim
 	url = https://github.com/Julian/lean.nvim.git
