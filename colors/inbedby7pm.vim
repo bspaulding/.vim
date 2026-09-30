@@ -20,7 +20,7 @@ let g:colors_name = "inbedby7pm"
 "  border      #4b4880   borders / separators
 "  fg          #a599e9   main foreground (soft lavender)
 "  fg_dim      #7b6fc4   dimmer foreground
-"  comment     #7a6897   muted purple-grey comments
+"  comment     #8a79a8   muted purple-grey comments
 "  red         #ff628c   errors, deletions
 "  orange      #f08d49   constants, numbers
 "  yellow      #fad000   warnings, special
@@ -102,7 +102,7 @@ hi Changed         guifg=#fad000   guibg=NONE      gui=NONE      ctermfg=220
 hi Removed         guifg=#ff628c   guibg=NONE      gui=NONE      ctermfg=204
 
 " ── Standard syntax groups ────────────────────────────────────
-hi Comment         guifg=#7a6897   guibg=NONE      gui=italic    ctermfg=97   cterm=italic
+hi Comment         guifg=#8a79a8   guibg=NONE      gui=italic    ctermfg=103  cterm=italic
 
 hi Constant        guifg=#f08d49   guibg=NONE      gui=NONE      ctermfg=208
 hi String          guifg=#3ad900   guibg=NONE      gui=NONE      ctermfg=40
