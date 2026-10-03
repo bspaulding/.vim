@@ -112,9 +112,6 @@
 [submodule "pack/plugins/start/zig.vim"]
 	path = pack/plugins/start/zig.vim
 	url = https://codeberg.org/ziglang/zig.vim.git
-[submodule "pack/plugins/start/lean.nvim"]
-	path = pack/plugins/start/lean.nvim
-	url = https://github.com/Julian/lean.nvim.git
 [submodule "pack/plugins/start/vim-dadbod"]
 	path = pack/plugins/start/vim-dadbod
 	url = https://tpope.io/vim/dadbod.git
@@ -127,6 +124,3 @@
 [submodule "pack/plugins/start/vim-go"]
 	path = pack/plugins/start/vim-go
 	url = https://github.com/fatih/vim-go.git
-[submodule "pack/plugins/start/Ionide-vim.git"]
-	path = pack/plugins/start/Ionide-vim.git
-	url = git@github.com:ionide/Ionide-vim.git
