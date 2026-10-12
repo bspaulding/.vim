@@ -281,7 +281,8 @@ let g:ale_linters = {
 \ 'haskell': ['hls'],
 \ 'elm': ['elm_ls'],
 \ 'typescript': ['tsserver'],
-\ 'typescriptreact': ['tsserver']
+\ 'typescriptreact': ['tsserver'],
+\ 'zig': []
 \}
 let g:ale_fixers = {
 \ 'css': ['prettier'],
